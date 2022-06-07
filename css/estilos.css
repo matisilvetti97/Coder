@@ -53,12 +53,30 @@
     margin-left: 50px;
     margin-top: 10px;
     filter: invert(100%);
+    transition: height: 5s width:5s;
+}
+
+.imagen__Nav:hover{
+    height: 100px;
+    width: 100px;
 }
 
 .titulo {
     font-size: 30px;
     color: aliceblue;
     font-family:Playfair Display;
+    animation-name: efecto_Titulo;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+
+@keyframes efecto_Titulo {
+    0%{font-size: 30px; }
+    15%{ font-size: 35px;}
+    25%{ font-size: 40px; color: red;}
+    75%{font-size: 50px; color: rgb(255, 255, 255);}  
 }
 
 .li {
@@ -68,6 +86,11 @@
     padding-left: 10px;
     font-family: Lobster;
     font-size: 20px;
+    transition: font-size:5s;
+}
+
+.li:hover{
+    font-size: 40px;
 }
 
 .listOpener :hover {
@@ -104,7 +127,8 @@
 /*Svg de Onda*/
 
 .div__Onda {
-    background-color: #fff;
+    background: rgb(219,129,65);
+    background: linear-gradient(90deg, rgba(219,129,65,1) 25%, rgba(255,255,255,1) 75%);
     grid-area: onda;
     display: flex;
     flex-direction: column;
@@ -116,7 +140,12 @@
     font-family: Koulen;
     font-size: 3rem;
     margin: 70px 50px 10px 50px;
-    color:#e99457;
+    color:#000000;
+    transition: font-size: 15s;
+}
+
+.div__Hero--Titulo:hover {
+    font-size: 5rem;
 }
 
 .div__Hero--Parrafo {
@@ -143,6 +172,16 @@
     font-size: 3rem;
     margin-top: 150px;
     margin-right: 20px;
+    animation-name: efecto_Lateral;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes efecto_Lateral {
+    0% {color: #fff; font-size: 3rem;}
+    50% {color: black; font-size: 3.5rem;}
 }
 
 .lateral__Lista {
@@ -203,6 +242,12 @@
     height: 100%;
     width: 100%;
     border-radius: 50px;
+    transition: height:5s widht:5s;
+}
+
+.section__Article--Imagen:hover{
+    height: 110%;
+    width: 110%;
 }
 
 .section__Article--Texto {
@@ -221,7 +266,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #000000;
+    background: rgb(219,129,65);
+    background: linear-gradient(90deg, rgba(219,129,65,1) 25%, rgba(0,0,0,1) 75%);
     align-items: center;
     justify-content: center;
 }
@@ -249,7 +295,7 @@
 }
 
 .recomendacion__Titulo {
-    color: #e99457;
+    color: #000000;
     font-family: Playfair Display;
     padding-top: 20px;
 }
@@ -257,7 +303,7 @@
 .recomendacion__Parrafo {
     padding-top: 20px;
     font-family: Playfair Display;
-    color: #e99457;
+    color: #000000;
 }
 
 /*Seccion de las Reseñas */
@@ -280,6 +326,11 @@
     font-size: 35px;
     color: beige;
     padding-left: 20px;
+    transition: font-size:5s;
+}
+
+.section__Reseñas--Titulo:hover{
+    font-size: 45px;
 }
 
 .div__Reseñas {
@@ -316,6 +367,12 @@
     font-family: Playfair Display;
     color: #000000;
     font-size: 30px;
+    transition: font-size:5s color:5s;
+}
+
+.div__Reseñas--Titulo:hover{
+    font-size: 40px;
+    color: aliceblue;
 }
 
 .div__Reseñas--Texto {
@@ -372,6 +429,18 @@
 
     .lateral {
         display: none;
+    }
+
+    .recomendacion__Titulo {
+        color: #ffffff;
+        font-family: Playfair Display;
+        padding-top: 20px;
+    }
+    
+    .recomendacion__Parrafo {
+        padding-top: 20px;
+        font-family: Playfair Display;
+        color: #ffffff;
     }
 
     .nav {
@@ -444,6 +513,18 @@
         align-items: baseline;
         height: 100%;
         background-color: #e99457;
+    }
+
+    .recomendacion__Titulo {
+        color: #ffffff;
+        font-family: Playfair Display;
+        padding-top: 20px;
+    }
+    
+    .recomendacion__Parrafo {
+        padding-top: 20px;
+        font-family: Playfair Display;
+        color: #ffffff;
     }
 
     .footer__Ul {
