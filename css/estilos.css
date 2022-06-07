@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Koulen&family=Lobster&family=Macondo&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@1,500&family=Rubik+Glitch&family=Tapestry&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav"
+                         "hero hero"
+                         "texto texto"
+                         "onda onda"
+                         "recetas lateral"
+                         "recomendada lateral"
+                         "reseña reseña"
+                         "footer footer";
+}
+
+/*Barra de Navegacion*/
+
+.header {
+    grid-area: nav;
+    background-color: rgb(7, 3, 3);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.nav__Ul {
+    margin-right: 20px;
+    font-family: Koulen;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.imagen__Nav {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+    filter: invert(100%);
+}
+
+.titulo {
+    font-size: 30px;
+    color: aliceblue;
+    font-family:Playfair Display;
+}
+
+.li {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline;
+    padding-left: 10px;
+    font-family: Lobster;
+    font-size: 20px;
+}
+
+.listOpener :hover {
+    color: rgb(43, 78, 47);
+}
+
+/*Hero section */
+
+.section {
+    grid-area: hero;
+    position: relative;
+    height: 90vh;
+}
+
+.section__Div {
+    width: 100%;
+    height: 100%;
+}
+
+.section__Div--Imagen {
+    height: 100%;
+    width: 100%;
+}
+
+.section__Frase {
+    color: rgb(255, 255, 255);
+    font-family: Lobster;
+    font-size: 40px;
+    padding-left: 40px;
+    position: absolute;
+    bottom: 250px;
+}
+
+/*Svg de Onda*/
+
+.div__Onda {
+    background-color: #fff;
+    grid-area: onda;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__Hero--Titulo {
+    font-family: Koulen;
+    font-size: 3rem;
+    margin: 70px 50px 10px 50px;
+    color:#e99457;
+}
+
+.div__Hero--Parrafo {
+    font-family: Lobster;
+    font-size: 2rem;
+    padding: 0px 50px 0px 50px;
+}
+
+/*Seccion Lateral*/
+
+.lateral {
+    grid-area: lateral;
+    background-color:#e99457;
+    margin-top: -5px;
+    height: 105%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral__Titulo {
+    color: #fff;
+    font-family: koulen;
+    font-size: 3rem;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+.lateral__Lista {
+    font-family: koulen;
+    color: black;
+    font-size: 25px;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.lateral__Lista--Item {
+    padding-top: 20px;
+}
+
+/*Seccion de las Recetas*/
+
+.section__Recetas {
+    grid-area: recetas;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #e99457;
+}
+
+.section__Recetas--Anchore {
+    text-decoration: none;
+}
+
+.anchore {
+    height: 50%;
+    width: 80%;
+}
+
+.section__Recetas--Texto {
+    font-family: Lobster;
+    font-size: 30px;
+    padding-left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.section__Recetas--Div {
+    display: flex;
+    align-items: baseline;
+}
+
+.section__Article1 {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section__Article--Imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.section__Article--Texto {
+    display: flex;
+    padding: 30px;
+    font-family: Playfair Display;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Seccion de la Comida recomendada del mes*/
+
+.seccion__Recomendacion {
+    grid-area: recomendada;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendacion__Div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 80px;
+    justify-content: space-evenly;
+}
+
+.recomendacion__Div2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__Recomendacion--Imagen {
+    height: 70%;
+    width: 70%;
+    border-radius: 40%;
+    align-items: center;
+}
+
+.recomendacion__Titulo {
+    color: #e99457;
+    font-family: Playfair Display;
+    padding-top: 20px;
+}
+
+.recomendacion__Parrafo {
+    padding-top: 20px;
+    font-family: Playfair Display;
+    color: #e99457;
+}
+
+/*Seccion de las Reseñas */
+
+.section__Reseñas {
+    grid-area: reseña;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e99457;
+}
+
+.section__Reseñas--Anchore {
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+.section__Reseñas--Titulo {
+    font-family: Playfair Display;
+    font-size: 35px;
+    color: beige;
+    padding-left: 20px;
+}
+
+.div__Reseñas {
+    grid-area: reseña;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 100%;
+    background-color: #e99457;
+}
+
+.section__Article2 {
+    height: 100%;
+    padding: 45px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__Reseñas--Imagen {
+    height: 100%;
+    width: 100%;
+}
+
+.section__Article2--Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.div__Reseñas--Titulo { 
+    font-family: Playfair Display;
+    color: #000000;
+    font-size: 30px;
+}
+
+.div__Reseñas--Texto {
+    padding: 30px;
+    font-family: Playfair Display;
+    color: #000000;
+    font-size: 15px;
+}
+
+.anchore2 {
+    height: 50%;
+    width: 50%;
+}
+
+/*Footer con datos*/
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.footer__Ul {
+    text-align: center;
+    font-size: 20px;
+    font-family: koulen;
+    color: beige;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.ul__Li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+/*MEDIA QUERIE (medio)*/
+
+@media screen and (max-width: 870px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav"
+                             "hero"
+                             "texto"
+                             "onda"
+                             "recetas"
+                             "recomendada"
+                             "reseña"
+                             "footer";
+        width: 100%;
+    }
+
+    .lateral {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+}
+
+/*MEDIA QUERIE (bajo)*/
+
+@media screen and (max-width: 650px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav"
+                             "hero"
+                             "texto"
+                             "onda"
+                             "recetas"
+                             "recomendada"
+                             "reseña"
+                             "footer";
+        width: 100%;
+    }
+
+    .li {
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Lobster;
+        font-size: 20px;
+    }
+
+    .lateral {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .section__Recetas--Div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .seccion__Recomendacion {
+        grid-area: recomendada;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+    }
+
+    .recomendacion__Div {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .div__Reseñas {
+        grid-area: reseña;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+        height: 100%;
+        background-color: #e99457;
+    }
+
+    .footer__Ul {
+        text-align: center;
+        font-size: 10px;
+        font-family: koulen;
+        color: beige;
+        height: 100%;
+        padding-top: 10px;
+    }
+    
+    .ul__Li {
+        display: inline;
+        padding: 0px 5px;
+    }
+}
+
+/*PAGINA DE CONTACTO*/
+
+/*CUERPO DEL CONTACTO*/
+
+.contacto__body { 
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto 100px auto auto;
+    grid-template-areas: "nav"
+                         "titulo"
+                         "info1"
+                         "footer"
+}
+
+.contacto__Header {
+    grid-area: nav;
+    background-color: rgb(7, 3, 3);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.contacto__Div {
+    grid-area: titulo;
+    font-family: Koulen;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #bbb5b1;
+}
+
+.contacto__Main {
+    grid-area: info1;
+    height: 60vh;
+    padding: 50px;
+    background-image: url(../assets/imagenfondotexto.jpg);
+}
+
+.contacto__Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Section__Div {
+    padding: 10px;
+}
+
+.contacto__footer {
+        grid-area: footer;
+        background-color: black;
+    }
+    
+    .footer__Ul {
+        text-align: center;
+        font-size: 20px;
+        font-family: koulen;
+        color: beige;
+        height: 100%;
+        padding-top: 10px;
+    }
+    
+    .ul__Li {
+        display: inline;
+        padding: 0px 20px;
+    }
+
+/*MEDIA QUERIE (bajo)*/
+
+@media screen and (max-width: 650px) {
+
+    .contacto__body { 
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "nav"
+                             "titulo"
+                             "info1"
+                             "footer"
+    }
+
+    .contacto__Section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Section__Div {
+        padding: 5px;
+    }
+
+    .footer__Ul {
+        text-align: center;
+        font-size: 20px;
+        font-family: koulen;
+        color: beige;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    .footer__Ul {
+        text-align: center;
+        font-size: 10px;
+        font-family: koulen;
+        color: beige;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+}
