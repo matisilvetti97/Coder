@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//css/estilos.css">
+    <link rel="icon" href=".//assets/favicon.jpg">
+    <title>Rincon Culinario</title>
+</head>
+<body class="body">
+
+    <!--Navegacion-->
+
+    <header class="header">
+            <nav class="nav">
+                <a href="/index.html"> <img class="imagen__Nav" src=".//assets/cubiertos.png" alt=""></a>
+                <div>
+                    <p class="titulo">RINCÓN CULINARIO</p>
+                </div>
+                <ul class="nav__Ul">
+                    <li class="li listOpener"><a class="li" href="./vistas/recetas.html">Recetas</a></li>                
+                    <li class="li listOpener"><a class="li" href="./vistas/valoraciones.html">Valoraciones</a></li>
+                    <li class="li listOpener"><a class="li" href="./vistas/cursos.html">Cursos</a></li>
+                    <li class="li listOpener"><a class="li" href="./vistas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!--Hero Section-->
+
+    <section class="section">
+        <div class="section__Div">
+            <img class="section__Div--Imagen" src="./assets/comidahero.jpg" alt="Plato gourmet con carne y verduras">
+        </div>
+        <div class="section__Frase">
+            <p>Un espacio para los <br> amantes de la cocina...</p> 
+        </div>
+    </section>
+
+
+    <!--Parte del Svg con la onda-->
+
+    <div class="div__Onda">
+        <h2 class="div__Hero--Titulo">Todo lo que tenemos para vos</h2>
+        <p class="div__Hero--Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
+        <svg class="div__Onda--Svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e99457" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,144C672,128,768,128,864,133.3C960,139,1056,149,1152,154.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <!--Sector lateral con opciones-->
+
+    <div class="lateral">
+        <h3 class="lateral__Titulo">CATEGORIAS</h3>
+        <ul class="lateral__Lista">
+            <li class="lateral__Lista--Item">ENTRADAS</li>
+            <li>COMIDAS TRADICIONALES</li>
+            <li>CARNES</li>
+            <li>VEGETARIANOS</li>
+            <li>PLATOS RAPIDOS</li>
+            <li>PARRILLA Y FUEGOS</li>
+            <li>COMIDA PARA CELIACOS</li>
+            <li>COCINA INTERNACIONAL</li>
+            <li>POSTRES</li>
+            <li>TRAGOS</li>
+        </ul>
+    </div>
+
+
+    <!--Sector de las Recetas-->
+
+    <section class="section__Recetas">
+        <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
+        <div class="section__Recetas--Div">
+            <article class="section__Article1">
+                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/empanadasdepollo.jpg" alt=""></a>
+                <div class="section__Article--Texto">
+                    <h5>EMPANADAS DE POLLO</h5> 
+                    <p>Una receta facil y con pocos ingredientes ideal para congelar y tener listas para salir de apuros.</p>
+                </div>
+            </article>
+            <article class="section__Article1">
+                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/guisodelentejas.jpg" alt=""></a>
+                <div class="section__Article--Texto">
+                    <h5>GUISO DE LENTEJAS</h5>
+                    <p>Animate a probar esta receta ahora que se viene el invierno.</p>
+                </div>
+            </article>
+            <article class="section__Article1">
+                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/bifealacriolla.jpg" alt=""> </a>
+                <div class="section__Article--Texto">
+                    <h5>BIFE A LA CRIOLLA</h5>
+                    <p>Una opcion tradicional que si bien lleva su tiempo de preparación, te aseguramos que valdrá la pena.</p>
+                </div>
+        </div>
+    </section>
+
+    <!--Seccion de la comida recomendada del mes-->
+
+    <section class="seccion__Recomendacion">
+        <div class="recomendacion__Div">
+                <h2 class="recomendacion__Titulo">NUESTRA RECOMENDACION DEL MES</h2>
+                <h4 class="recomendacion__Titulo">COLITA DE CUADRIL RELLENA</h4>
+                <p class="recomendacion__Parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque harum iste tempore eligendi id omnis blanditiis, reiciendis, esse quasi molestias voluptatibus ratione autem dolorem libero ducimus asperiores recusandae nam? Suscipit?</p>
+        </div>
+        <div class="recomendacion__Div2">
+            <img class="section__Recomendacion--Imagen" src=".//assets/colitarellena.jpg" alt="">
+        </div>
+    </section>
+
+    <!--Seccion de las Reseñas-->
+
+    <section class="section__Reseñas">
+        <a class="section__Reseñas--Anchore" href=".//vistas/valoraciones.html"><h2 class="section__Reseñas--Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
+        <div class="div__Reseñas">
+            <article class="section__Article2">
+                <a class="anchore2" href=".//vistas/valoraciones.html"><img class="section__Reseñas--Imagen" src=".//assets/gordon-ramsay-main-quien.jpg" alt=""></a>
+                <div class="section__Article2--Div">
+                    <h5 class="div__Reseñas--Titulo">RESTAURANT CACHITO</h5>
+                    <p class="div__Reseñas--Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
+                </div>
+            </article>
+            <article class="section__Article2">
+                <a class="anchore2" href=".//vistas/valoraciones.html"><img class="section__Reseñas--Imagen" src=".//assets/SALTBAE.jpg" alt=""></a>
+                <div class="section__Article2--Div">
+                    <h5 class="div__Reseñas--Titulo">PARRILLA DON ANTONITO</h5>
+                    <p class="div__Reseñas--Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--Footer con datos-->
+
+    <footer class="footer">
+        <ul class="footer__Ul">
+            <li class="ul__Li">Telefono de contacto: 381745896 </li>
+            <li class="ul__Li">Instagram: rinconculinario</li>
+            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>
