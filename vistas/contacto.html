@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="./assets/favicon.jpg">
+    <title>CONTACTO</title>
+</head>
+<body class="contacto__body">
+
+<!--Navegacion-->
+
+    <header class="contacto__Header">
+        <nav class="nav">
+            <a href="/index.html"> <img class="imagen__Nav" src="../assets/cubiertos.png" alt=""></a>
+            <div>
+                <p class="titulo">RINCÓN CULINARIO</p>
+            </div>
+            <ul class="nav__Ul">
+                <li class="li listOpener"><a class="li" href="./vistas/recetas.html">Recetas</a></li>                
+                <li class="li listOpener"><a class="li" href="./vistas/valoraciones.html">Valoraciones</a></li>
+                <li class="li listOpener"><a class="li" href="./vistas/cursos.html">Cursos</a></li>
+                <li class="li listOpener"><a class="li" href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Titulo del contacto-->   
+
+    <div class="contacto__Div">
+        <h1 class="main__Titulo--Contacto">RINCON CULINARIO</h1>
+    </div>
+
+<!--Contenido del formulario-->
+    <main class="contacto__Main">
+        <section class="contacto__Section"> 
+            <div class="Section__Div">
+                <form action="" method="get" enctype="text/plain">
+                    <fieldset>
+                        <legend>INFORMACION PERSONAL:</legend>
+                        <nav>
+                            <label for="NombredeUsuario"> Nombre: </label>
+                            <input type="text" id="NombredeUsuario" placeholder="Coloque su nombre y apellido" name="NombredeUsuario">
+                        </nav>
+                        <nav>
+                            <label for="Email">Email: </label>
+                            <input type="email" id="Correo" required placeholder="Coloque su email" name="Email">
+                        </nav>
+                        <nav>
+                            <label for="fechadeviaje">Edad: </label>
+                            <input type="date" id="fechadeviaje" required placeholder="Elija la fecha" name="fechadeviaje">
+                        </nav>
+                    </fieldset>
+            </div>
+            <div class="Section__Div">
+                <fieldset>
+                    <legend>PAQUETE :</legend>
+                    <label for="Viajedeseado">CURSO DE INTERES:</label>
+                    <textarea name="Viajedeseado" id="Viajedeseado" cols="50" rows="5" placeholder="Coloque el curso de su interes para que le enviemos un correo con mas informacion"></textarea>
+                </fieldset>
+            </div>
+            <div class="Section__Div">
+                <button >ENVIAR</button>
+                <input type="reset" value="LIMPIAR CAMPOS">
+            </div>
+        </form>
+        </section>
+    </main> 
+    
+     <!--Footer con datos-->
+
+     <footer class="contacto__footer">
+        <ul class="footer__Ul">
+            <li class="ul__Li">Telefono de contacto: 381745896 </li>
+            <li class="ul__Li">Instagram: rinconculinario</li>
+            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
