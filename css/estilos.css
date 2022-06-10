@@ -589,14 +589,21 @@
 .contacto__Div {
     grid-area: titulo;
     font-family: Koulen;
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px;
     background-color: #bbb5b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__Titulo--Contacto {
+    font-size: 60px;
+    padding: 15px;
 }
 
 .contacto__Main {
     grid-area: info1;
-    height: 60vh;
     padding: 50px;
     background-image: url(../assets/imagenfondotexto.jpg);
 }
