@@ -9,7 +9,7 @@
 .body {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: "nav nav"
                          "hero hero"
                          "texto texto"
@@ -17,7 +17,6 @@
                          "recetas lateral"
                          "recomendada lateral"
                          "reseña reseña"
-                         "fotos fotos"
                          "footer footer";
 }
 
@@ -32,7 +31,10 @@
 }
 
 .nav {
+    height: 100px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
 
@@ -100,19 +102,12 @@
 .section {
     grid-area: hero;
     position: relative;
-    height: 95vh;
+    height: 90vh;
 }
 
 .section__Div {
     width: 100%;
     height: 100%;
-}
-
-.section__Boton {
-    position: absolute;
-    bottom: 150px;
-    left: 170px;
-    color: #ffffff;
 }
 
 .section__Div--Imagen {
@@ -390,23 +385,6 @@
 .anchore2 {
     height: 50%;
     width: 50%;
-}
-
-/*Carrousel con fotos*/
-
-.contenedor__Fotos {
-    grid-area: fotos;
-    background-color: #e99457;
-}
-
-.contendor__Fotos--Tamaño {
-    height: 500px;
-    width: 100%;
-}
-
-.row_Carrousel{
-    display: flex;
-    padding: 20px;
 }
 
 /*Footer con datos*/

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +14,38 @@
     <!--Navegacion-->
 
     <header class="header">
-            <nav class="nav">
-                <a href="/index.html"> <img class="imagen__Nav" src=".//assets/cubiertos.png" alt=""></a>
-                <div>
-                    <p class="titulo">RINCÓN CULINARIO</p>
-                </div>
-                <ul class="nav__Ul">
-                    <li class="li listOpener"><a class="li" href="./vistas/recetas.html">Recetas</a></li>                
-                    <li class="li listOpener"><a class="li" href="./vistas/valoraciones.html">Valoraciones</a></li>
-                    <li class="li listOpener"><a class="li" href="./vistas/cursos.html">Cursos</a></li>
-                    <li class="li listOpener"><a class="li" href="./vistas/contacto.html">Contacto</a></li>
-                </ul>
+            <nav>
+                <nav class="navbar nav navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">RC</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=".//index.html">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href=".//vistas/recetas.html">RECETAS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href=".//vistas/valoraciones.html">VALORACIONES</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href=".//vistas/cursos.html">CURSOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href=".//vistas/contacto.html">CONTACTO</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
             </nav>
     </header>
 
@@ -35,6 +57,11 @@
         </div>
         <div class="section__Frase">
             <p>Un espacio para los <br> amantes de la cocina...</p> 
+        </div>
+        <div class="section__Boton">
+            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
         </div>
     </section>
 
@@ -72,7 +99,7 @@
         <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
         <div class="section__Recetas--Div">
             <article class="section__Article1">
-                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/empanadasdepollo.jpg" alt=""></a>
+                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen " src=".//assets/empanadasdepollo.jpg" alt=""></a>
                 <div class="section__Article--Texto">
                     <h5>EMPANADAS DE POLLO</h5> 
                     <p>Una receta facil y con pocos ingredientes ideal para congelar y tener listas para salir de apuros.</p>
@@ -96,7 +123,7 @@
 
     <!--Seccion de la comida recomendada del mes-->
 
-    <section class="seccion__Recomendacion">
+    <section  class="seccion__Recomendacion">
         <div class="recomendacion__Div">
                 <h2 class="recomendacion__Titulo">NUESTRA RECOMENDACION DEL MES</h2>
                 <h4 class="recomendacion__Titulo">COLITA DE CUADRIL RELLENA</h4>
@@ -129,6 +156,50 @@
         </div>
     </section>
 
+    <!--Carrousel con fotos-->
+    <div class="contenedor__Fotos">
+        <div class="row_Carrousel">
+            <div class="col-md-6 d-flex-column justify-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/bifealacriolla.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/colitarellena.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/ARROZCONMARISCOS.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-md-6 d-flex d-flex-column align-items-center justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/cheffamoso.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Chef Torres</h5>
+                      <p class="card-text">Ingresa para encontrar las mejores recetas del chef Torres.</p>
+                      <a href="#" class="btn btn-dark d-md-block">INICIAR</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
     <!--Footer con datos-->
 
     <footer class="footer">
@@ -138,5 +209,6 @@
             <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
         </ul>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
