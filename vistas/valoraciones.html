@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,142 @@
     <link rel="icon" href="./assets/favicon.jpg">
     <title>VALORACIONES</title>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <a href="../index.html"><img class="header__Imagen" src="../assets/cuchi.png" alt="">
-            <ul class="nav__Ul">
-                <li class="li listOpener"><a class="nav__A" href="../index.html">Inicio</a></li>                
-                <li class="li listOpener"><a class="nav__A" href="../vistas/recetas.html">Recetas</a></li>
-                <li class="li listOpener"><a class="nav__A" href="../vistas/cursos.html">Cursos</a></li>
-                <li class="li listOpener"><a class="nav__A" li" href="../vistas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
+
+<body class="valoraciones__Body">
+    
+    <!--Navegacion-->
+
+    <div class="nav">
         <div>
-            <h1 class="main__Titulo">RINCÓN CULINARIO</h1>
+          <a href="./index.html"><img class="nav__Div--Imagen" src="../assets/cubiertos.png" alt=""></a>
         </div>
-        <div class="main__Div--Restaurante">
-            <img class="div__Imagen--Restaurante" src="../assets/restaurante.jpg" alt="restaurante">
-        </div>  
-        <section class="reseñas">
-            <article class="section__Article--Reseñas">
-                <img class="section__Article--ImagenesR" src ="../assets/CHEF DONATO DE SANTIS_PORTADA.jpg" alt="Chef Donato de Santis">
-                <h4>NUESTROS CRITICOS</h4> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum facilis earum, magnam est consectetur quasi maxime deserunt corporis nobis quam rerum corrupti voluptatum deleniti ut? Nesciunt excepturi magnam fugiat?</p>
-            </article>
-            <article class="section__Article--Reseñas">
-                <img class="section__Article--ImagenesR" src="../assets/CRITICA.jpg" alt="Ego critico de Ratatouile">
-                <h4>ULTIMAS VALORACIONES </h4> <br>
-                <p>LOREM ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
-            </article>
-            <article class="section__Article--Reseñas">
-                <img class="section__Article--ImagenesR" src="../assets/estrellasnue.png" alt="5 estrellas doradas">
-                <h4>TOP 10 DE RESTAURANTES</h4> <br>
-                <p>LOREM ipsum dolor sit amet, consectetur adipisicing elit. Earum, debitis quasi? Vel quod culpa magni porro libero tempora doloribus tenetur et eum, laudantium quas! Rem dolor vel minima. Aut optio itaque officia! Autem veniam illo placeat ea quos maxime, accusantium id error cum eaque officia!</p>
-            </article>
-        </section> 
-        <hr>
-    </main>   
-    <footer class="footer">
+        <div>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistas/recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistas/valoraciones.html">Valoraciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistas/cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    <!--IMAGEN DE LA HERO CON FOTO DEL RESTAURANTE-->
+
+    <section class="valoraciones__SectionHero">
+        <div class="valoraciones__Hero--Div">
+            <img class="valoraciones__section--Imagen" src="../assets/restaurante.jpg" alt="">
+        </div>
+    </section>
+
+<!--PRIMER GRUPO DE VALORACIONES-->
+<div class="row row-cols-1 row-cols-md-2 g-4 valoraciones__Div--Reseñas">
+    <div class="col">
+      <div class="card">
+        <a href="./valoraciones.html"><img src="../assets/RESTA1.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">BAR FUTBOLERO KAISER</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="./valoraciones.html"><img src="../assets/RESTA2.jpg" class="card-img-top " alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">CIRCULO ROJO</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="./valoraciones.html"><img src="../assets/RESTA3.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">MIRADOR LEJANO</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="./valoraciones.html"><img src="../assets/RESTA4.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">TATEL</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Parte lateral de la publicidad-->
+<section class="section__Publicidad">
+    <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+      <img src="../assets/cocacola.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
+      </div>
+    </div></a>
+    <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+      <img src="../assets/personalcel.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text section__Publicidad--Text">PERSONAL</p>
+      </div>
+    </div></a>
+    <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+        <img src="../assets/cocacola.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
+        </div>
+      </div></a>
+      <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+        <img src="../assets/personalcel.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text section__Publicidad--Text">PERSONAL</p>
+        </div>
+      </div></a>
+</section>
+
+<!--ONDA SEPARADORA-->
+
+<div class="valoraciones__Onda">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,160L360,128L720,128L1080,96L1440,320L1440,0L1080,0L720,0L360,0L0,0Z"></path></svg>
+</div>
+
+<!--LUGAR RECOMENDADO DE LA SEAMANA-->
+
+<div class="card bg-dark text-white recomendada__Div">
+    <img src="../assets/RESTAURANTRECOMENDADO.jpg" class="card-img recomendada__Div--Imagen" alt="...">
+    <div class="card-img-overlay recomendada__Div--Textos">
+      <h5 class="card-title">RESTAURANT RECOMENDADO DEL MES</h5>
+      <a class="recomendada__Div__Anchore" href=".//vistas/recetas.html"><h1>LA LECOMBT</h1></a>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ad a velit enim officiis autem? Culpa inventore, cum, quidem mollitia hic voluptates ullam neque ipsum deserunt tempora quasi assumenda praesentium?Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="card-text">Last updated 5 days ago</p>
+    </div>
+  </div>
+
+<!--Footer con datos-->
+
+<nav class="navbar nav__Footer">
+    <div class="container-fluid justify-content-center">
+      <span class="navbar-text footer">
         <ul class="footer__Ul">
-            <li class="ul__Li">Telefono de contacto: 381745896 </li>
-            <li class="ul__Li">Instagram: rinconculinario</li>
-            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+          <li class="ul__Li">Telefono de contacto: 381745896</li>
+          <li class="ul__Li">Instagram: rinconculinario</li>
+          <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
         </ul>
-    </footer>
+      </span>
+    </div>
+  </nav>
+
+    <script src="../js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

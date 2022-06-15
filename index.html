@@ -13,55 +13,38 @@
 
     <!--Navegacion-->
 
-    <header class="header">
-            <nav>
-                <nav class="navbar nav navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">RC</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href=".//index.html">INICIO</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href=".//vistas/recetas.html">RECETAS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href=".//vistas/valoraciones.html">VALORACIONES</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href=".//vistas/cursos.html">CURSOS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href=".//vistas/contacto.html">CONTACTO</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-            </nav>
-    </header>
+    <div class="nav">
+      <div>
+        <a href="./index.html"><img class="nav__Div--Imagen" src="./assets/cubiertos.png" alt=""></a>
+      </div>
+      <div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./vistas/recetas.html">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./vistas/valoraciones.html">Valoraciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./vistas/cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./vistas/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
 
     <!--Hero Section-->
 
     <section class="section">
         <div class="section__Div">
-            <img class="section__Div--Imagen" src="./assets/comidahero.jpg" alt="Plato gourmet con carne y verduras">
+            <img class="section__Div--Imagen img-fluid" src="./assets/fondedelhero.jpg" alt="Plato gourmet con carne y verduras">
         </div>
-        <div class="section__Frase">
-            <p>Un espacio para los <br> amantes de la cocina...</p> 
-        </div>
-        <div class="section__Boton">
-            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
+        <div class="Section__Titulo" >
+            <h1>RINCÓN CULINARIO</h1>
+            <p>Un espacio para los amantes de la cocina...</p> 
         </div>
     </section>
 
@@ -71,7 +54,9 @@
     <div class="div__Onda">
         <h2 class="div__Hero--Titulo">Todo lo que tenemos para vos</h2>
         <p class="div__Hero--Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
-        <svg class="div__Onda--Svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e99457" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,144C672,128,768,128,864,133.3C960,139,1056,149,1152,154.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ffffff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,213.3C384,224,480,224,576,213.3C672,203,768,181,864,170.7C960,160,1056,160,1152,186.7C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
     </div>
 
     <!--Sector lateral con opciones-->
@@ -80,23 +65,40 @@
         <h3 class="lateral__Titulo">CATEGORIAS</h3>
         <ul class="lateral__Lista">
             <li class="lateral__Lista--Item">ENTRADAS</li>
-            <li>COMIDAS TRADICIONALES</li>
-            <li>CARNES</li>
-            <li>VEGETARIANOS</li>
-            <li>PLATOS RAPIDOS</li>
-            <li>PARRILLA Y FUEGOS</li>
-            <li>COMIDA PARA CELIACOS</li>
-            <li>COCINA INTERNACIONAL</li>
-            <li>POSTRES</li>
-            <li>TRAGOS</li>
+            <li class="lateral__Lista--Item">COMIDAS TRADICIONALES</li>
+            <li class="lateral__Lista--Item">CARNES</li>
+            <li class="lateral__Lista--Item">VEGETARIANOS</li>
+            <li class="lateral__Lista--Item">PLATOS RAPIDOS</li>
+            <li class="lateral__Lista--Item">PARRILLA Y FUEGOS</li>
+            <li class="lateral__Lista--Item">COMIDA PARA CELIACOS</li>
+            <li class="lateral__Lista--Item">COCINA INTERNACIONAL</li>
+            <li class="lateral__Lista--Item">POSTRES</li>
+            <li class="lateral__Lista--Item">TRAGOS</li>
         </ul>
     </div>
+
+    <!--Parte lateral de la publicidad-->
+    <section class="section__Publicidad">
+        <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+          <img src="./assets/cocacola.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
+          </div>
+        </div></a>
+        <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
+          <img src="./assets/personalcel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text section__Publicidad--Text">PERSONAL</p>
+          </div>
+        </div></a>
+    </section>
 
 
     <!--Sector de las Recetas-->
 
     <section class="section__Recetas">
         <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
+        <p class="seccion__Recetas--Parrafo">Clásicos que no pueden faltar en buen hogar Argentino</p>
         <div class="section__Recetas--Div">
             <article class="section__Article1">
                 <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen " src=".//assets/empanadasdepollo.jpg" alt=""></a>
@@ -121,94 +123,116 @@
         </div>
     </section>
 
-    <!--Seccion de la comida recomendada del mes-->
+<!--Carrousel con fotos-->
+<div class="contenedor__Fotos">
+  <div class="row_Carrousel">
+      <div class="col-md-12 d-flex-column justify-content-center">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./vistas/recetas.html"><img src="./assets/bifealacriolla.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
+                  <h3 class="carousel__Titulo">ESTOFADO A LA CRIOLLA</h3>
+                  <p class="carousel__Parrafo">Este rico platillo es una receta casera y popular en los hogares argentinos. Muy sencilla de preparar, el sabor de la carne se une al dulzor de la zanahoria con la cebolla y las papas, condimentadas con una mezcla de comino, orégano.</p>
+                </div>
+                <div class="carousel-item">
+                  <a href="./vistas/recetas.html"><img src="./assets/colitarellena.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
+                  <h3 class="carousel__Titulo">COLITA DE CUADRIL RELLENA</h3>
+                  <p class="carousel__Parrafo">La colita de cuadril rellena es una comida sabrosa por sus ingredientes y la forma de rellenarla. Las capas de relleno dejan apreciar bien los ingredientes sin perder el sabor principal de la carne.</p>
+                </div>
+                <div class="carousel-item">
+                  <a href="./vistas/recetas.html"><img src="./assets/ARROZCONMARISCOS.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
+                  <h3 class="carousel__Titulo">PAELLA CON MARISCOS</h3>
+                  <p class="carousel__Parrafo">Esta receta de paella de mariscos, y las recetas en general con frutos de mar, esas que son únicas, especiales para cocinar siempre interesan mucho para quedar re bien con cualquier persona o simplemente para deleitarnos, preparando una cita con uno mismo, cocinarse rico y tomar un buen vino.</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+  </div>
+</div>
 
-    <section  class="seccion__Recomendacion">
-        <div class="recomendacion__Div">
-                <h2 class="recomendacion__Titulo">NUESTRA RECOMENDACION DEL MES</h2>
-                <h4 class="recomendacion__Titulo">COLITA DE CUADRIL RELLENA</h4>
-                <p class="recomendacion__Parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque harum iste tempore eligendi id omnis blanditiis, reiciendis, esse quasi molestias voluptatibus ratione autem dolorem libero ducimus asperiores recusandae nam? Suscipit?</p>
-        </div>
-        <div class="recomendacion__Div2">
-            <img class="section__Recomendacion--Imagen" src=".//assets/colitarellena.jpg" alt="">
-        </div>
-    </section>
+    <!--Seccion de la ONDA debajo-->
+    <div class="div__Onda2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#db8141" fill-opacity="1" d="M0,128L1440,32L1440,320L0,320Z"></path></svg>
+    </div>
 
     <!--Seccion de las Reseñas-->
 
     <section class="section__Reseñas">
-        <a class="section__Reseñas--Anchore" href=".//vistas/valoraciones.html"><h2 class="section__Reseñas--Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
-        <div class="div__Reseñas">
-            <article class="section__Article2">
-                <a class="anchore2" href=".//vistas/valoraciones.html"><img class="section__Reseñas--Imagen" src=".//assets/gordon-ramsay-main-quien.jpg" alt=""></a>
-                <div class="section__Article2--Div">
-                    <h5 class="div__Reseñas--Titulo">RESTAURANT CACHITO</h5>
-                    <p class="div__Reseñas--Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
-                </div>
-            </article>
-            <article class="section__Article2">
-                <a class="anchore2" href=".//vistas/valoraciones.html"><img class="section__Reseñas--Imagen" src=".//assets/SALTBAE.jpg" alt=""></a>
-                <div class="section__Article2--Div">
-                    <h5 class="div__Reseñas--Titulo">PARRILLA DON ANTONITO</h5>
-                    <p class="div__Reseñas--Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
-                </div>
-            </article>
+        <a class="section__Reseñas--Titulo" href=".//vistas/valoraciones.html"><h2 class="section__Reseñas--Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <a href=".//vistas/recetas.html"><img src="./assets/SALTBAE.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body section__Reseñas--Div">
+                <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT LO DE PABLO</h5></a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis animi earum nam, omnis molestiae sapiente perspiciatis nostrum iusto mollitia vitae, numquam minus officiis totam hic voluptatem iure repellat expedita?</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 days ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card h-100">
+              <a href=""><img src="./assets/gordon-ramsay-main-quien.jpg" class="card-img-top" alt="...">
+              <div class="card-body"></a>
+                <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT CACHITO</h5></a>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dignissimos vel eveniet ea velit reiciendis debitis consectetur, animi distinctio dolores!.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 7 weeks ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href=".//vistas/recetas.html"><img src="./assets/martitegui.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <a class="section__Reseñas--Anchore" href=".//vistas/recetas.html"><h5 class="card-title">LA CASA DE TOTO</h5></a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime tempora nam harum dolore nulla itaque ipsum nesciunt magnam quis? Mollitia tempore cupiditate voluptatem! Eos, necessitatibus.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <!--Carrousel con fotos-->
-    <div class="contenedor__Fotos">
-        <div class="row_Carrousel">
-            <div class="col-md-6 d-flex-column justify-content-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/bifealacriolla.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/colitarellena.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/ARROZCONMARISCOS.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
-            <div class="col-md-6 d-flex d-flex-column align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/cheffamoso.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Chef Torres</h5>
-                      <p class="card-text">Ingresa para encontrar las mejores recetas del chef Torres.</p>
-                      <a href="#" class="btn btn-dark d-md-block">INICIAR</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
+  <!--Seccion de la comida recomendada del mes-->
+
+  <div class="card bg-dark text-white recomendada__Div">
+    <img src="./assets/locrito.jpg" class="card-img recomendada__Div--Imagen" alt="...">
+    <div class="card-img-overlay recomendada__Div--Textos">
+      <h5 class="card-title">PLATO RECOMENDADO DEL MES</h5>
+      <a class="recomendada__Div__Anchore" href=".//vistas/recetas.html"><h1>LOCRO ARGENTINO</h1></a>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ad a velit enim officiis autem? Culpa inventore, cum, quidem mollitia hic voluptates ullam neque ipsum deserunt tempora quasi assumenda praesentium?Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="card-text">Last updated 3 mins ago</p>
     </div>
+  </div>
 
     <!--Footer con datos-->
 
-    <footer class="footer">
-        <ul class="footer__Ul">
-            <li class="ul__Li">Telefono de contacto: 381745896 </li>
+    <nav class="navbar nav__Footer">
+      <div class="container-fluid justify-content-center">
+        <span class="navbar-text footer">
+          <ul class="footer__Ul">
+            <li class="ul__Li">Telefono de contacto: 381745896</li>
             <li class="ul__Li">Instagram: rinconculinario</li>
             <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
-        </ul>
-    </footer>
+          </ul>
+        </span>
+      </div>
+    </nav>
+
     <script src="./js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

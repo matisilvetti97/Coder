@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,54 +9,218 @@
     <link rel="icon" href="./assets/favicon.jpg">
     <title>RECETAS</title>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <a href="../index.html"><img class="header__Imagen" src="../assets/cuchi.png" alt="">
-            <ul class="nav__Ul">
-                <li class="li listOpener"><a class="nav__A" href="../index.html">Inicio</a></li>                
-                <li class="li listOpener"><a class="nav__A" href="../vistas/valoraciones.html">Valoraciones</a></li>
-                <li class="li listOpener"><a class="nav__A" href="../vistas/cursos.html">Cursos</a></li>
-                <li class="li listOpener"><a class="nav__A" li" href="../vistas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
+
+<body class="precetas__Body">
+
+    <!--Navegacion-->
+
+    <div class="nav">
         <div>
-            <h1 class="main__Titulo">RINCON CULINARIO</h1>
+            <a href="./index.html"><img class="nav__Div--Imagen" src="../assets/cubiertos.png" alt=""></a>
         </div>
-        <div class="main__Div--Recetas">
-            <a href="https://www.google.com/"><img class="div__Imagen--Paella" src="../assets/PAELLANCHA.jpg" alt="Paella valenciana de arroz y mariscos">
-            <div class="div__Paella">
-                <h4>PAELLA VALENCIANA</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur odit soluta iure natus. Nulla saepe rerum eligendi placeat eveniet! Iste non dolor dolores, temporibus omnis facere ut. Itaque, perspiciatis.</p></a>
+        <div>
+            <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../vistas/valoraciones.html">Valoraciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../vistas/cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../vistas/contacto.html">Contacto</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Carrousel con fotos-->
+<div class="precetas__Carousel">
+    <div class="row_Carrousel precetas__Carousel">
+        <div class="col-md-12 d-flex-column justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner precetas__Carousel">
+                  <div class="carousel-item active">
+                    <a href="recetas.html"><img src="../assets/tacosrecetas1.jpg" class="d-block precetas__Carousel--Imagen w-100" alt="..."></a>
+                    <a class="pcarousel__Anchore" href="./recetas.html"><h3 class="pcarousel__Titulo">TACOS MEXICANOS</h3></a>
+                    <p class="pcarousel__Parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum tempore quo earum. Perferendis, adipisci!</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./recetas.html"><img src="../assets/carnerecetas2.jpg" class="d-block precetas__Carousel--Imagen w-100" alt="..."></a>
+                    <a class="pcarousel__Anchore" href="./recetas.html"><h3 class="pcarousel__Titulo">CARRÉ DE CERDO</h3></a>
+                    <p class="pcarousel__Parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta voluptatibus voluptas sint vitae reprehenderit consequuntur tempore beatae aperiam dolore magnam.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./vistas/recetas.html"><img src="../assets/patorecetas3.jpg" class="d-block precetas__Carousel--Imagen w-100" alt="..."></a>
+                    <a class="pcarousel__Anchore" href="./recetas.html"><h3 class="pcarousel__Titulo">PATO A LA NARANJA</h3></a>
+                    <p class="pcarousel__Parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maxime incidunt numquam ducimus repudiandae cum. Error vel cumque atque placeat.</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+  </div>
+
+<!--Seccion de la onda en la pagina de recetas-->
+<div class="div__ondarecetas">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#db8141" fill-opacity="1" d="M0,192L120,165.3C240,139,480,85,720,69.3C960,53,1200,75,1320,85.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+</div>
+
+<!--Seccion con 3 recetas rapidas con sus links y un titulo-->
+<section class="psection__Recetas">
+    <div>
+        <h1 class="psection__Recetas--Titulo"> RECETAS SIMPLES </h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="../assets/recetafacil1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body section__Reseñas--Div">
+                  <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">BROCHETAS DE POLLO Y VERDURA</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore similique ducimus aliquam!</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 days ago</small>
+                </div>
+              </div>
             </div>
-        </div>  
-        <section class="section__Recetas">
-            <article class="section__Article--Recetas">
-                <img class="section__Article--Imagenes" src ="../assets/milanesa1.jpg" alt="Milanesa a la napolitana con papas"><br>
-                <h5>MILANESA A LA NAPOLITANA</h5> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi, consequatur aliquid..</p>
-            </article>
-            <article class="section__Article--Recetas">
-                <img class="section__Article--Imagenes" src="../assets/calabaza1.jpg" alt="Calabaza rellena con queso y verduras"><br>
-                <h5>ZAPALLOS RELLENOS </h5> <br>
-                <p>LOREM ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi, consequatur aliquid, eaque cupiditate harum ullam corrupti.</p>
-            </article>
-            <article class="section__Article--Recetas">
-                <img class="section__Article--Imagenes" src="../assets/postre3.jpg" alt="Tiramisu con chocolate"><br>
-                <h5>TIRAMISU</h5> <br>
-                <p>LOREM ipsum dolor sit amet, consectetur adipisicing elit. Earum, debitis quasi? Vel quod culpa magni porro libero tempora doloribus tenetur et eum, laudantium quas! Rem dolor vel minima. Aut optio itaque officia! Autem veniam illo placeat ea quos maxime, accusantium id error cum eaque officia!</p>
-            </article>
-        </section> 
-        <hr>
-    </main>   
-    <footer class="footer">
-        <ul class="footer__Ul">
-            <li class="ul__Li">Telefono de contacto: 381745896 </li>
-            <li class="ul__Li">Instagram: rinconculinario</li>
-            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
-        </ul>
-    </footer>
+            <div class="col ">
+              <div class="card h-100">
+                <a href=""><img src="../assets/recetafacil2.jpg" class="card-img-top" alt="...">
+                <div class="card-body"></a>
+                  <a class="section__Reseñas--Anchore" href="./recetas.html"><h5 class="card-title">PIZZA CASERA</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit corrupti omnis similique cupiditate autem quos.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 7 weeks ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="../assets/recetafacil3.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a class="section__Reseñas--Anchore" href=".//vistas/recetas.html"><h5 class="card-title">TOSTADAS SABORIZADAS</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus perferendis quas modi incidunt in beatae aut repellendus unde nobis.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--Sector lateral con opciones-->
+
+<div class="plateral">
+    <h3 class="lateral__Titulo">CATEGORIAS</h3>
+    <ul class="lateral__Lista">
+        <li class="lateral__Lista--Item">ENTRADAS</li>
+        <li class="lateral__Lista--Item">COMIDAS TRADICIONALES</li>
+        <li class="lateral__Lista--Item">CARNES</li>
+        <li class="lateral__Lista--Item">VEGETARIANOS</li>
+        <li class="lateral__Lista--Item">PLATOS RAPIDOS</li>
+        <li class="lateral__Lista--Item">PARRILLA Y FUEGOS</li>
+        <li class="lateral__Lista--Item">COMIDA PARA CELIACOS</li>
+        <li class="lateral__Lista--Item">COCINA INTERNACIONAL</li>
+        <li class="lateral__Lista--Item">POSTRES</li>
+        <li class="lateral__Lista--Item">TRAGOS</li>
+    </ul>
+</div>
+
+<!--Seccion donde va una receta destacada-->
+
+<div class="card mb-3 div__Recetadestacada">
+    <div class="row">
+      <div class="col-md-6 ">
+        <img src="../assets/pastasvertical.jpg" class="img-fluid rounded-start recetadestacada__Imagen" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body div__Recetadestacada--Texto">
+          <h5 class="card-title div__Recetadestacada--Titulo">SPAGUETTI CASERO</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut eligendi corporis nobis possimus minus repellendus cumque. Quas, dolores labore..</p>
+          <p class="card-text"><small class="text-muted">Last updated 7 hours ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Segunda onda antes de las nuevas recetas-->
+  <div class="recetas__Onda2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#db8141" fill-opacity="1" d="M0,32L34.3,53.3C68.6,75,137,117,206,117.3C274.3,117,343,75,411,74.7C480,75,549,117,617,138.7C685.7,160,754,160,823,176C891.4,192,960,224,1029,208C1097.1,192,1166,128,1234,122.7C1302.9,117,1371,171,1406,197.3L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+  </div>
+  
+  <!-- Segunda Seccion con 3 recetas rapidas con sus links y un titulo-->
+
+<section class="psection__Recetas2">
+    <div>
+        <h1 class="psection__Recetas--Titulo"> OPCIONES MAS ELABORADAS </h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="../assets/lomowellington.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body section__Reseñas--Div">
+                  <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">LOMO WELLINGTON</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore similique ducimus aliquam!</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 days ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card h-100">
+                <a href=""><img src="../assets/terneracontrufas.jpg" class="card-img-top" alt="...">
+                <div class="card-body"></a>
+                  <a class="section__Reseñas--Anchore" href="./recetas.html"><h5 class="card-title">TERNERA CON TRUFAS</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit corrupti omnis similique cupiditate autem quos.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 7 weeks ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="../assets/salmonsalteado.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a class="section__Reseñas--Anchore" href=".//vistas/recetas.html"><h5 class="card-title">SALMON SALTEADO</h5></a>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus perferendis quas modi incidunt in beatae aut repellendus unde nobis.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--Footer con datos-->
+
+<nav class="navbar rnav__Footer">
+    <div class="container-fluid justify-content-center">
+        <span class="navbar-text footer">
+            <ul class="footer__Ul">
+              <li class="ul__Li">Telefono de contacto: 381745896</li>
+              <li class="ul__Li">Instagram: rinconculinario</li>
+              <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+            </ul>
+        </span>
+    </div>
+</nav>
+
+    <script src="../js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
