@@ -1,0 +1,22 @@
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #000000;
+    .nav-link {
+        font-family:Lobster;
+        font-size: 20px;
+        color: #ffffff;
+        .nav-link:hover {
+            color: rgb(130, 228, 126);
+        }
+    }
+    
+    .nav__Div--Imagen {
+        width: 10%;
+        filter: invert(100%);
+        margin-left:1.5rem;
+    }
+}
+

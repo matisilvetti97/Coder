@@ -1,0 +1,31 @@
+.section__Reseñas {
+    grid-area: reseña;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #db8141;
+    padding: 3rem;
+    .section__Reseñas--Titulo {
+        font-family: Playfair Display;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: font-size:5s;
+    }
+    
+    .section__Reseñas--Titulo :hover {
+        font-size: 4rem;
+    }
+    
+    .section__Reseñas--Anchore {
+        padding-top: 2rem;
+        text-decoration: none;
+        color: #000000;
+        .section__Reseñas--Anchore :hover {
+            font-size: 1.5rem;
+            color: #000000;
+        }
+    }
+    
+}

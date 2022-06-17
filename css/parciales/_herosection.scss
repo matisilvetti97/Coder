@@ -1,0 +1,23 @@
+.section {
+    grid-area: hero;
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    .&__Div {
+        width: 100%;
+        height: 100%;
+        .&__Div--Imagen {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .&__Titulo {
+        color: rgb(255, 255, 255);
+        font-family: Lobster;
+        font-size: 40px;
+        padding-left: 40px;
+        position: absolute;
+        bottom: 200px;
+    }
+}

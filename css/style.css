@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "nav nav" "hero hero" "texto publi" "onda publi" "recetas lateral" "fotos lateral" "onda2 onda2" "reseña reseña" "recomendada recomendada" "footer footer"; }
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #000000; }
+  .nav .nav-link {
+    font-family: Lobster;
+    font-size: 20px;
+    color: #ffffff; }
+    .nav .nav-link .nav-link:hover {
+      color: #82e47e; }
+  .nav .nav__Div--Imagen {
+    width: 10%;
+    filter: invert(100%);
+    margin-left: 1.5rem; }
+
+@importo;

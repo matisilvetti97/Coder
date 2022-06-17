@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*Body del index"*/
+
 .body {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -56,7 +58,6 @@
     height: 85vh;
     width: 100%;
 }
-
 .section__Div {
     width: 100%;
     height: 100%;
@@ -67,7 +68,7 @@
     width: 100%;
 }
 
-.Section__Titulo {
+.section__Titulo {
     color: rgb(255, 255, 255);
     font-family: Lobster;
     font-size: 40px;
@@ -75,6 +76,7 @@
     position: absolute;
     bottom: 200px;
 }
+
 
 /*Svg de Onda*/
 
@@ -88,7 +90,7 @@
     align-items: center;
 }
 
-.div__Hero--Titulo {
+.div__Onda--Titulo {
     font-family: Koulen;
     font-size: 3rem;
     margin: 70px 50px 10px 50px;
@@ -96,11 +98,11 @@
     transition: font-size: 15s;
 }
 
-.div__Hero--Titulo:hover {
+.div__Onda--Titulo:hover {
     font-size: 4rem;
 }
 
-.div__Hero--Parrafo {
+.div__Onda--Parrafo {
     font-family: Lobster;
     font-size: 2rem;
     padding: 0px 50px 0px 50px;
@@ -123,16 +125,6 @@
     font-size: 3rem;
     margin-top: 150px;
     margin-right: 20px;
-    animation-name: efecto_Lateral;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
-}
-
-@keyframes efecto_Latera {
-    0% {color: #fff; font-size: 3rem;}
-    50% {color: black; font-size: 3.5rem;}
 }
 
 .lateral__Lista {
@@ -155,6 +147,9 @@
     background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
 }
 
+.section__Publicidad--Anchore {
+    text-decoration: none;
+}
 .section__Publicidad--Div {
     margin: 10px;
 }
@@ -166,9 +161,7 @@
     font-size: 20px;
 }
 
-.section__Publicidad--Anchore {
-    text-decoration: none;
-}
+
 
 /*Seccion de las Recetas*/
 
@@ -185,21 +178,11 @@
     text-decoration: none;
 }
 
-.anchore {
-    height: 50%;
-    width: 80%;
-}
-
 .section__Recetas--Texto {
     font-family: Lobster;
     font-size: 3rem;
     padding-left: 50px;
     color: rgb(0, 0, 0);
-}
-
-.section__Recetas--Div {
-    display: flex;
-    align-items: baseline;
 }
 
 .seccion__Recetas--Parrafo{
@@ -209,6 +192,11 @@
     padding-left: 50px;
 }
 
+.section__Recetas--Div {
+    display: flex;
+    align-items: baseline;
+}
+
 .section__Article1 {
     height: 450px;
     width: 100%;
@@ -216,6 +204,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.anchore {
+    height: 50%;
+    width: 80%;
 }
 
 .section__Article--Imagen {
@@ -230,6 +223,7 @@
     width: 110%;
 }
 
+
 .section__Article--Texto {
     display: flex;
     padding: 30px;
@@ -238,20 +232,21 @@
     align-items: center;
 }
 
+
 /*Carrousel con fotos*/
 
 .contenedor__Fotos {
     grid-area: fotos;
 }
 
-.contendor__Fotos--Tamaño {
-    height: 500px;
-    width: 100%;
-}
-
 .row_Carrousel{
     display: flex;
     padding: 20px;
+}
+
+.contendor__Fotos--Tamaño {
+    height: 500px;
+    width: 100%;
 }
 
 .carousel__Titulo {
@@ -345,13 +340,13 @@
 
 /*Footer con datos*/
 
-.nav__Footer {
+.footer {
     grid-area: footer;
     background-color: #000000;
     justify-content: center;
 }
 
-.footer {
+.nav__Footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
