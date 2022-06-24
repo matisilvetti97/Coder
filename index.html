@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//css/estilos.css">
+    <meta name="keywords" content="comida, recetas, menu, facil, reseñas, cocineros">
+    <meta name="description" content="Aprende a cocinar muy facil, recetas para todos los gustos y mucho más">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href=".//assets/favicon.jpg">
-    <title>Rincon Culinario</title>
+    <title>Rincón Culinario</title>
 </head>
-<body class="body">
+<body class="index__Body">
 
     <!--Navegacion-->
 
     <div class="nav">
       <div>
-        <a href="./index.html"><img class="nav__Div--Imagen" src="./assets/cubiertos.png" alt=""></a>
+        <a href="./index.html"><img class="nav__Imagen" src="./assets/cubiertos.png" alt=""></a>
       </div>
       <div>
         <ul class="nav justify-content-end">
@@ -38,22 +40,21 @@
 
     <!--Hero Section-->
 
-    <section class="section">
-        <div class="section__Div">
-            <img class="section__Div--Imagen img-fluid" src="./assets/fondedelhero.jpg" alt="Plato gourmet con carne y verduras">
+    <section class="hero">
+        <div class="hero__Div">
+            <img class="hero__Div--imagen img-fluid" src="./assets/fondedelhero.jpg" alt="Plato gourmet con carne y verduras">
         </div>
-        <div class="section__Titulo" >
+        <div class="hero__Titulo" >
             <h1>RINCÓN CULINARIO</h1>
             <p>Un espacio para los amantes de la cocina...</p> 
         </div>
     </section>
 
-
     <!--Parte del Svg con la onda-->
 
-    <div class="div__Onda">
-        <h2 class="div__Onda--Titulo">Todo lo que tenemos para vos</h2>
-        <p class="div__Onda--Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
+    <div class="onda1">
+        <h2 class="onda1__Titulo">Todo lo que tenemos para vos</h2>
+        <p class="onda1__Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#ffffff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,213.3C384,224,480,224,576,213.3C672,203,768,181,864,170.7C960,160,1056,160,1152,186.7C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
@@ -78,19 +79,16 @@
     </div>
 
     <!--Parte lateral de la publicidad-->
-    <section class="section__Publicidad">
-        <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-          <img src="./assets/cocacola.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
-          </div>
-        </div></a>
-        <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-          <img src="./assets/personalcel.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text section__Publicidad--Text">PERSONAL</p>
-          </div>
-        </div></a>
+    <section class="publicidad">
+      <a class="publicidad__Anchore" href="https://www.coca-cola.com.ar/"><div class="card publicidad__Div--Publi1" style="width: 18rem;">
+          <p class="card-text publicidad__Texto">DESTAPA LA FELICIDAD</p>
+        </div>
+      </div></a>
+      <a class="publicidad__Anchore" href="https://www.personal.com.ar/"><div class="card publicidad__Div--Publi2" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text publicidad__Texto">PERSONAL</p>
+        </div>
+      </div></a>
     </section>
 
 
@@ -99,24 +97,24 @@
     <section class="section__Recetas">
         <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
         <p class="seccion__Recetas--Parrafo">Clásicos que no pueden faltar en buen hogar Argentino</p>
-        <div class="section__Recetas--Div">
-            <article class="section__Article1">
-                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen " src=".//assets/empanadasdepollo.jpg" alt=""></a>
-                <div class="section__Article--Texto">
+        <div class="div__Recetas">
+            <article class="article__Recetas">
+                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/empanadasdepollo.jpg" alt=""></a>
+                <div class="article__Recetas--Texto">
                     <h5>EMPANADAS DE POLLO</h5> 
                     <p>Una receta facil y con pocos ingredientes ideal para congelar y tener listas para salir de apuros.</p>
                 </div>
             </article>
-            <article class="section__Article1">
-                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/guisodelentejas.jpg" alt=""></a>
-                <div class="section__Article--Texto">
+            <article class="article__Recetas">
+                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/guisodelentejas.jpg" alt=""></a>
+                <div class="article__Recetas--Texto">
                     <h5>GUISO DE LENTEJAS</h5>
                     <p>Animate a probar esta receta ahora que se viene el invierno.</p>
                 </div>
             </article>
-            <article class="section__Article1">
-                <a class="anchore" href=".//vistas/recetas.html"><img class="section__Article--Imagen" src=".//assets/bifealacriolla.jpg" alt=""> </a>
-                <div class="section__Article--Texto">
+            <article class="article__Recetas">
+                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/bifealacriolla.jpg" alt=""> </a>
+                <div class="article__Recetas--Texto">
                     <h5>BIFE A LA CRIOLLA</h5>
                     <p>Una opcion tradicional que si bien lleva su tiempo de preparación, te aseguramos que valdrá la pena.</p>
                 </div>
@@ -124,25 +122,25 @@
     </section>
 
 <!--Carrousel con fotos-->
-<div class="contenedor__Fotos">
-  <div class="row_Carrousel">
+<div class="carrousel">
+  <div class="carrousel__Div">
       <div class="col-md-12 d-flex-column justify-content-center">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="./vistas/recetas.html"><img src="./assets/bifealacriolla.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
-                  <h3 class="carousel__Titulo">ESTOFADO A LA CRIOLLA</h3>
-                  <p class="carousel__Parrafo">Este rico platillo es una receta casera y popular en los hogares argentinos. Muy sencilla de preparar, el sabor de la carne se une al dulzor de la zanahoria con la cebolla y las papas, condimentadas con una mezcla de comino, orégano.</p>
+                  <a href="./vistas/recetas.html"><img src="./assets/bifealacriolla.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                  <h3 class="carrousel__Titulo">ESTOFADO A LA CRIOLLA</h3>
+                  <p class="carrousel__Parrafo">Este rico platillo es una receta casera y popular en los hogares argentinos. Muy sencilla de preparar, el sabor de la carne se une al dulzor de la zanahoria con la cebolla y las papas, condimentadas con una mezcla de comino, orégano.</p>
                 </div>
                 <div class="carousel-item">
-                  <a href="./vistas/recetas.html"><img src="./assets/colitarellena.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
-                  <h3 class="carousel__Titulo">COLITA DE CUADRIL RELLENA</h3>
-                  <p class="carousel__Parrafo">La colita de cuadril rellena es una comida sabrosa por sus ingredientes y la forma de rellenarla. Las capas de relleno dejan apreciar bien los ingredientes sin perder el sabor principal de la carne.</p>
+                  <a href="./vistas/recetas.html"><img src="./assets/colitarellena.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                  <h3 class="carrousel__Titulo">COLITA DE CUADRIL RELLENA</h3>
+                  <p class="carrousel__Parrafo">La colita de cuadril rellena es una comida sabrosa por sus ingredientes y la forma de rellenarla. Las capas de relleno dejan apreciar bien los ingredientes sin perder el sabor principal de la carne.</p>
                 </div>
                 <div class="carousel-item">
-                  <a href="./vistas/recetas.html"><img src="./assets/ARROZCONMARISCOS.jpg" class="d-block contendor__Fotos--Tamaño w-100" alt="..."></a>
-                  <h3 class="carousel__Titulo">PAELLA CON MARISCOS</h3>
-                  <p class="carousel__Parrafo">Esta receta de paella de mariscos, y las recetas en general con frutos de mar, esas que son únicas, especiales para cocinar siempre interesan mucho para quedar re bien con cualquier persona o simplemente para deleitarnos, preparando una cita con uno mismo, cocinarse rico y tomar un buen vino.</p>
+                  <a href="./vistas/recetas.html"><img src="./assets/ARROZCONMARISCOS.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                  <h3 class="carrousel__Titulo">PAELLA CON MARISCOS</h3>
+                  <p class="carrousel__Parrafo">Esta receta de paella de mariscos, y las recetas en general con frutos de mar, esas que son únicas, especiales para cocinar siempre interesan mucho para quedar re bien con cualquier persona o simplemente para deleitarnos, preparando una cita con uno mismo, cocinarse rico y tomar un buen vino.</p>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -159,20 +157,20 @@
 </div>
 
     <!--Seccion de la ONDA debajo-->
-    <div class="div__Onda2">
+    <div class="onda2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#db8141" fill-opacity="1" d="M0,128L1440,32L1440,320L0,320Z"></path></svg>
     </div>
 
     <!--Seccion de las Reseñas-->
 
-    <section class="section__Reseñas">
-        <a class="section__Reseñas--Titulo" href=".//vistas/valoraciones.html"><h2 class="section__Reseñas--Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
+    <section class="reseñas">
+        <a class="reseñas__Titulo" href=".//vistas/valoraciones.html"><h2 class="reseñas__Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
               <a href=".//vistas/recetas.html"><img src="./assets/SALTBAE.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT LO DE PABLO</h5></a>
+                <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT LO DE PABLO</h5></a>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis animi earum nam, omnis molestiae sapiente perspiciatis nostrum iusto mollitia vitae, numquam minus officiis totam hic voluptatem iure repellat expedita?</p>
               </div>
               <div class="card-footer">
@@ -184,7 +182,7 @@
             <div class="card h-100">
               <a href=""><img src="./assets/gordon-ramsay-main-quien.jpg" class="card-img-top" alt="...">
               <div class="card-body"></a>
-                <a class="section__Reseñas--Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT CACHITO</h5></a>
+                <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT CACHITO</h5></a>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dignissimos vel eveniet ea velit reiciendis debitis consectetur, animi distinctio dolores!.</p>
               </div>
               <div class="card-footer">
@@ -196,7 +194,7 @@
             <div class="card h-100">
               <a href=".//vistas/recetas.html"><img src="./assets/martitegui.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <a class="section__Reseñas--Anchore" href=".//vistas/recetas.html"><h5 class="card-title">LA CASA DE TOTO</h5></a>
+                <a class="reseñas__Anchore" href=".//vistas/recetas.html"><h5 class="card-title">LA CASA DE TOTO</h5></a>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime tempora nam harum dolore nulla itaque ipsum nesciunt magnam quis? Mollitia tempore cupiditate voluptatem! Eos, necessitatibus.</p>
               </div>
               <div class="card-footer">
@@ -209,11 +207,11 @@
 
   <!--Seccion de la comida recomendada del mes-->
 
-  <div class="card bg-dark text-white recomendada__Div">
-    <img src="./assets/locrito.jpg" class="card-img recomendada__Div--Imagen" alt="...">
-    <div class="card-img-overlay recomendada__Div--Textos">
+  <div class="card bg-dark text-white recomendada">
+    <img src="./assets/locrito.jpg" class="card-img recomendada__Imagen" alt="...">
+    <div class="card-img-overlay recomendada__Textos">
       <h5 class="card-title">PLATO RECOMENDADO DEL MES</h5>
-      <a class="recomendada__Div__Anchore" href=".//vistas/recetas.html"><h1>LOCRO ARGENTINO</h1></a>
+      <a class="recomendada__Anchore" href=".//vistas/recetas.html"><h1>LOCRO ARGENTINO</h1></a>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ad a velit enim officiis autem? Culpa inventore, cum, quidem mollitia hic voluptates ullam neque ipsum deserunt tempora quasi assumenda praesentium?Lorem ipsum dolor sit amet consectetur.</p>
       <p class="card-text">Last updated 3 mins ago</p>
     </div>
@@ -223,11 +221,11 @@
 
     <nav class="navbar footer">
       <div class="container-fluid justify-content-center">
-        <span class="navbar-text nav_Footer">
+        <span class="navbar-text footer__Span">
           <ul class="footer__Ul">
-            <li class="ul__Li">Telefono de contacto: 381745896</li>
-            <li class="ul__Li">Instagram: rinconculinario</li>
-            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+            <li class="footer__Ul-Li">Telefono de contacto: 381745896</li>
+            <li class="footer__Ul-Li">Instagram: rinconculinario</li>
+            <li class="footer__Ul-Li">Email:rinconculinario@hotmail.com</li>
           </ul>
         </span>
       </div>

@@ -1,20 +1,18 @@
-.section__Publicidad {
+.publicidad {
     grid-area: publi;
     padding-top: 5px;
     background: rgb(222,54,54);
     background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
-    .&__&--Anchore {
+    .publicidad__Anchore {
         text-decoration: none;
     }
-    .&__&--Div {
+    .publicidad__Div {
         margin: 10px;
-        .&__&--Text {
-            font-family: Fascinate;
-            text-align: center;
-            color: #000000;
-            font-size: 20px;
-        }
+    } 
+    .publicidad__Texto {
+        font-family: Fascinate;
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
     }
-    
 }
-

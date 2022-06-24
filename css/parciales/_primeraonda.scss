@@ -1,4 +1,4 @@
-.div__Onda {
+.onda1 {
     background: rgb(222,54,54);
     background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
     grid-area: onda;
@@ -6,18 +6,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .&__&--Titulo {
+    .onda1__Titulo {
         font-family: Koulen;
         font-size: 3rem;
         margin: 70px 50px 10px 50px;
         color:#000000;
-        transition: font-size: 15s;
-        .&__&--Titulo:hover {
+        .onda1__Titulo:hover {
             font-size: 4rem;
         }
     }
-    
-    .&__&--Parrafo {
+    .onda1__Parrafo {
         font-family: Lobster;
         font-size: 2rem;
         padding: 0px 50px 0px 50px;

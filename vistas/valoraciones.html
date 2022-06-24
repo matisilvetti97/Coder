@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta name="keywords" content="chefs, valoraciones, estrellas michelin, bares, restaurantes, famosos">
+    <meta name="description" content="Lee las mejores reseñas sobre bares del pais, con opiniones de los mas destacados chefs"> 
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="./assets/favicon.jpg">
     <title>VALORACIONES</title>
 </head>
@@ -16,21 +18,21 @@
 
     <div class="nav">
         <div>
-          <a href="./index.html"><img class="nav__Div--Imagen" src="../assets/cubiertos.png" alt=""></a>
+          <a href="./index.html"><img class="nav__Imagen" src="../assets/cubiertos.png" alt=""></a>
         </div>
         <div>
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./vistas/recetas.html">Recetas</a>
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./vistas/valoraciones.html">Valoraciones</a>
+              <a class="nav-link active" aria-current="page" href="./recetas.html">Recetas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./vistas/cursos.html">Cursos</a>
+              <a class="nav-link active" aria-current="page" href="./cursos.html">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./vistas/contacto.html">Contacto</a>
+              <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -86,29 +88,24 @@
   </div>
 
 <!--Parte lateral de la publicidad-->
-<section class="section__Publicidad">
-    <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-      <img src="../assets/cocacola.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
+<section class="publicidad">
+    <a class="publicidad__Anchore" href="https://www.coca-cola.com.ar/"><div class="card publicidad__Div--Publi3" style="width: 18rem;">
+        <p class="card-text publicidad__Texto">HASTA TU PUERTA</p>
       </div>
     </div></a>
-    <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-      <img src="../assets/personalcel.jpg" class="card-img-top" alt="...">
+    <a class="publicidad__Anchore" href="https://www.personal.com.ar/"><div class="card publicidad__Div--Publi4" style="width: 18rem;">
       <div class="card-body">
-        <p class="card-text section__Publicidad--Text">PERSONAL</p>
+        <p class="card-text publicidad__Texto">COMODIDAD Y CONFORT</p>
       </div>
     </div></a>
-    <a class="section__Publicidad--Anchore" href="https://www.coca-cola.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-        <img src="../assets/cocacola.jpg" class="card-img-top" alt="...">
+    <a class="publicidad__Anchore" href="https://www.coca-cola.com.ar/"><div class="publicidad__Div--Publi5" style="width: 18rem;">
         <div class="card-body">
-          <p class="card-text section__Publicidad--Text">DESTAPA LA FELICIDAD</p>
+          <p class="card-text publicidad__Texto">JUST DO IT</p>
         </div>
       </div></a>
-      <a class="section__Publicidad--Anchore" href="https://www.personal.com.ar/"><div class="card section__Publicidad--Div" style="width: 18rem;">
-        <img src="../assets/personalcel.jpg" class="card-img-top" alt="...">
+      <a class="publicidad__Anchore" href="https://www.personal.com.ar/"><div class="publicidad__Div--Publi6" style="width: 18rem;">
         <div class="card-body">
-          <p class="card-text section__Publicidad--Text">PERSONAL</p>
+          <p class="card-text publicidad__Texto">TODO LO QUE NECESITAS</p>
         </div>
       </div></a>
 </section>
@@ -116,7 +113,7 @@
 <!--ONDA SEPARADORA-->
 
 <div class="valoraciones__Onda">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,160L360,128L720,128L1080,96L1440,320L1440,0L1080,0L720,0L360,0L0,0Z"></path></svg>
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(62, 243, 212.344, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,126L34.3,114C68.6,102,137,78,206,84C274.3,90,343,126,411,117C480,108,549,54,617,36C685.7,18,754,36,823,42C891.4,48,960,42,1029,51C1097.1,60,1166,84,1234,84C1302.9,84,1371,60,1440,48C1508.6,36,1577,36,1646,45C1714.3,54,1783,72,1851,78C1920,84,1989,78,2057,69C2125.7,60,2194,48,2263,45C2331.4,42,2400,48,2469,57C2537.1,66,2606,78,2674,93C2742.9,108,2811,126,2880,123C2948.6,120,3017,96,3086,90C3154.3,84,3223,96,3291,108C3360,120,3429,132,3497,129C3565.7,126,3634,108,3703,84C3771.4,60,3840,30,3909,33C3977.1,36,4046,72,4114,75C4182.9,78,4251,48,4320,51C4388.6,54,4457,90,4526,108C4594.3,126,4663,126,4731,105C4800,84,4869,42,4903,21L4937.1,0L4937.1,180L4902.9,180C4868.6,180,4800,180,4731,180C4662.9,180,4594,180,4526,180C4457.1,180,4389,180,4320,180C4251.4,180,4183,180,4114,180C4045.7,180,3977,180,3909,180C3840,180,3771,180,3703,180C3634.3,180,3566,180,3497,180C3428.6,180,3360,180,3291,180C3222.9,180,3154,180,3086,180C3017.1,180,2949,180,2880,180C2811.4,180,2743,180,2674,180C2605.7,180,2537,180,2469,180C2400,180,2331,180,2263,180C2194.3,180,2126,180,2057,180C1988.6,180,1920,180,1851,180C1782.9,180,1714,180,1646,180C1577.1,180,1509,180,1440,180C1371.4,180,1303,180,1234,180C1165.7,180,1097,180,1029,180C960,180,891,180,823,180C754.3,180,686,180,617,180C548.6,180,480,180,411,180C342.9,180,274,180,206,180C137.1,180,69,180,34,180L0,180Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,162L34.3,144C68.6,126,137,90,206,63C274.3,36,343,18,411,9C480,0,549,0,617,0C685.7,0,754,0,823,24C891.4,48,960,96,1029,105C1097.1,114,1166,84,1234,84C1302.9,84,1371,114,1440,108C1508.6,102,1577,60,1646,63C1714.3,66,1783,114,1851,135C1920,156,1989,150,2057,141C2125.7,132,2194,120,2263,117C2331.4,114,2400,120,2469,105C2537.1,90,2606,54,2674,54C2742.9,54,2811,90,2880,111C2948.6,132,3017,138,3086,132C3154.3,126,3223,108,3291,102C3360,96,3429,102,3497,93C3565.7,84,3634,60,3703,63C3771.4,66,3840,96,3909,111C3977.1,126,4046,126,4114,105C4182.9,84,4251,42,4320,21C4388.6,0,4457,0,4526,9C4594.3,18,4663,36,4731,63C4800,90,4869,126,4903,144L4937.1,162L4937.1,180L4902.9,180C4868.6,180,4800,180,4731,180C4662.9,180,4594,180,4526,180C4457.1,180,4389,180,4320,180C4251.4,180,4183,180,4114,180C4045.7,180,3977,180,3909,180C3840,180,3771,180,3703,180C3634.3,180,3566,180,3497,180C3428.6,180,3360,180,3291,180C3222.9,180,3154,180,3086,180C3017.1,180,2949,180,2880,180C2811.4,180,2743,180,2674,180C2605.7,180,2537,180,2469,180C2400,180,2331,180,2263,180C2194.3,180,2126,180,2057,180C1988.6,180,1920,180,1851,180C1782.9,180,1714,180,1646,180C1577.1,180,1509,180,1440,180C1371.4,180,1303,180,1234,180C1165.7,180,1097,180,1029,180C960,180,891,180,823,180C754.3,180,686,180,617,180C548.6,180,480,180,411,180C342.9,180,274,180,206,180C137.1,180,69,180,34,180L0,180Z"></path></svg>
 </div>
 
 <!--LUGAR RECOMENDADO DE LA SEAMANA-->
@@ -133,13 +130,13 @@
 
 <!--Footer con datos-->
 
-<nav class="navbar nav__Footer">
+<nav class="footer">
     <div class="container-fluid justify-content-center">
-      <span class="navbar-text footer">
+      <span class="navbar-text footer__Span">
         <ul class="footer__Ul">
-          <li class="ul__Li">Telefono de contacto: 381745896</li>
-          <li class="ul__Li">Instagram: rinconculinario</li>
-          <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
+          <li class="footer__Ul-Li">Telefono de contacto: 381745896</li>
+          <li class="footer__Ul-Li">Instagram: rinconculinario</li>
+          <li class="footer__Ul-Li">Email:rinconculinario@hotmail.com</li>
         </ul>
       </span>
     </div>

@@ -1,0 +1,125 @@
+
+/* PAGINA DE LAS VALORACIONES */
+
+/*ORGANIZACION DEL CUERPO */
+
+.valoraciones__Body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav"
+                         "hero hero"
+                         "valora publi"
+                         "valora publi"
+                         "onda2 onda2"
+                         "recomendada recomendada"
+                         "footer footer";
+}
+
+/*SECCION DEL HERO DE LA PAGINA DE VALORACIONES*/
+
+.valoraciones__SectionHero {
+    grid-area: hero;
+    height: 50vh;
+}
+
+.valoraciones__Hero--Div {
+    height: 100%;
+}
+
+.valoraciones__section--Imagen {
+    width: 100%;
+    height: 100%;
+}   
+
+/*PUBLICIDAD EN LAS VALORACIONES*/
+
+.publicidad__Div2 {
+    background-image: url(../assets/cocacola.jpg);
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    margin: 2rem;
+}
+
+.publicidad__Texto2 {
+    font-family: Fascinate;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/*PRIMER GRUPO DE VALORACIONES*/
+
+.valoraciones__Div--Reseñas {
+    grid-area: valora;
+    padding: 2rem;
+}
+
+.valoraciones__Card--Imagen {
+    height: 100%;
+}
+
+.valoraciones__Card--Imagen :hover {
+    height: 90%;
+}
+
+/*ONDA SEPARADORA*/
+
+.valoraciones__Onda {
+    grid-area: onda2;
+    height: 150px;
+}
+
+.section__Publicidad {
+    grid-area: publi;
+}
+
+.section__Publicidad--Anchore {
+    padding: 2rem;
+}
+
+/* LUGAR RECOMENDADO DE LA SEMANA*/
+
+.recomendada__Div {
+    grid-area: recomendada;
+}
+
+
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+
+@media screen and (max-width: 480px) {
+
+    .valoraciones__Body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav"
+                            "hero"
+                            "valora"
+                            "onda2"
+                            "recomenda"
+                            "footer"
+    }
+
+    .nav__Div--Imagen {
+        width: 100%;
+        filter: invert(100%);
+        margin-left: 1.0rem;
+        margin-right: 1.5rem;
+    }
+
+    .plateral {
+        display: none;
+    }
+
+    .psection__Publicidad {
+        display: none;
+    }
+
+    .recomendada__Div {
+        grid-area: recomenda;
+    }
+}

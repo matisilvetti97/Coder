@@ -8,7 +8,7 @@
 
 /*Body del index"*/
 
-.body {
+.index__Body {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -44,7 +44,7 @@
     color: rgb(130, 228, 126);
 }
 
-.nav__Div--Imagen {
+.nav__Imagen {
     width: 10%;
     filter: invert(100%);
     margin-left:1.5rem;
@@ -52,23 +52,23 @@
 
 /*Hero section */
 
-.section {
+.hero {
     grid-area: hero;
     position: relative;
     height: 85vh;
     width: 100%;
 }
-.section__Div {
+.hero__Div {
     width: 100%;
     height: 100%;
 }
 
-.section__Div--Imagen {
+.hero__Div--imagen {
     height: 100%;
     width: 100%;
 }
 
-.section__Titulo {
+.hero__Titulo {
     color: rgb(255, 255, 255);
     font-family: Lobster;
     font-size: 40px;
@@ -80,7 +80,7 @@
 
 /*Svg de Onda*/
 
-.div__Onda {
+.onda1 {
     background: rgb(222,54,54);
     background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
     grid-area: onda;
@@ -90,19 +90,18 @@
     align-items: center;
 }
 
-.div__Onda--Titulo {
+.onda1__Titulo {
     font-family: Koulen;
     font-size: 3rem;
     margin: 70px 50px 10px 50px;
     color:#000000;
-    transition: font-size: 15s;
 }
 
-.div__Onda--Titulo:hover {
+.onda1__Titulo:hover {
     font-size: 4rem;
 }
 
-.div__Onda--Parrafo {
+.onda1__Parrafo {
     font-family: Lobster;
     font-size: 2rem;
     padding: 0px 50px 0px 50px;
@@ -140,27 +139,25 @@
 }
 
 /*Seccion Publicidad*/
-.section__Publicidad {
+.publicidad {
     grid-area: publi;
     padding-top: 5px;
     background: rgb(222,54,54);
     background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
 }
 
-.section__Publicidad--Anchore {
+.publicidad__Anchore {
     text-decoration: none;
 }
-.section__Publicidad--Div {
+.publicidad__Div {
     margin: 10px;
 }
-
-.section__Publicidad--Text {
+.publicidad__Texto {
     font-family: Fascinate;
     text-align: center;
     color: #000000;
     font-size: 20px;
 }
-
 
 
 /*Seccion de las Recetas*/
@@ -192,12 +189,12 @@
     padding-left: 50px;
 }
 
-.section__Recetas--Div {
+.div__Recetas {
     display: flex;
     align-items: baseline;
 }
 
-.section__Article1 {
+.article__Recetas {
     height: 450px;
     width: 100%;
     display: flex;
@@ -206,25 +203,24 @@
     align-items: center;
 }
 
-.anchore {
+.article__Recetas--Anchore {
     height: 50%;
     width: 80%;
 }
 
-.section__Article--Imagen {
+.article__Recetas--Imagen {
     height: 100%;
     width: 100%;
     border-radius: 50px;
-    transition: height:5s widht:5s;
+    transition: width 5s; height: 5s;
 }
 
-.section__Article--Imagen:hover{
+.article__Recetas--Imagen:hover{
     height: 110%;
     width: 110%;
 }
 
-
-.section__Article--Texto {
+.article__Recetas--Texto {
     display: flex;
     padding: 30px;
     font-family: Playfair Display;
@@ -235,34 +231,34 @@
 
 /*Carrousel con fotos*/
 
-.contenedor__Fotos {
+.carrousel {
     grid-area: fotos;
 }
 
-.row_Carrousel{
+.carrousel__Div {
     display: flex;
     padding: 20px;
 }
 
-.contendor__Fotos--Tamaño {
+.carrousel__Fotos {
     height: 500px;
     width: 100%;
 }
 
-.carousel__Titulo {
+.carrousel__Titulo {
     font-family: Lobster;
     font-size: 20px;
     color: red;
     padding: 10px 5px 5px 5px;
 }
 
-.carousel__Parrafo {
+.carrousel__Parrafo {
     font-family: Loan;
 }
 
 /*Seccion de la segunda onda */
 
-.div__Onda2{
+.onda2{
     grid-area: onda2;
     height: 150px;
 }
@@ -273,7 +269,7 @@
 
 /*Seccion de las Reseñas */
 
-.section__Reseñas {
+.reseñas {
     grid-area: reseña;
     display: flex;
     flex-direction: column;
@@ -281,47 +277,46 @@
     background-color: #db8141;
     padding: 3rem;
 }
-
-.section__Reseñas--Titulo {
+.reseñas__Titulo {
     font-family: Playfair Display;
     font-size: 3rem;
     padding-bottom: 3rem;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    transition: font-size:5s;
 }
 
-.section__Reseñas--Titulo :hover {
+.reseñas__Titulo :hover {
     font-size: 4rem;
 }
 
-.section__Reseñas--Anchore {
+.reseñas__Anchore {
     padding-top: 2rem;
     text-decoration: none;
     color: #000000;
 }
 
-.section__Reseñas--Anchore :hover {
+.reseñas__Anchore :hover {
     font-size: 1.5rem;
     color: #000000;
 }
 
+
 /*Seccion de la Comida recomendada del mes*/
 
-.recomendada__Div {
+.recomendada {
     grid-area: recomendada;
     height: 500px;
     width: 100%;
 }
 
-.recomendada__Div--Imagen {
+.recomendada__Imagen {
     opacity: 50%;
     object-fit: fill;
     height: 100%;
     width: 100%;
 }
 
-.recomendada__Div--Textos {
+.recomendada__Textos {
     display: flex;
     flex-direction: column;
     padding: 5rem;
@@ -330,11 +325,11 @@
     font-family: Bungee;
 }
 
-.recomendada__Div__Anchore {
+.recomendada__Anchore {
     text-decoration: none;
 }
 
-.recomendada__Div__Anchore :hover {
+.recomendada__Anchore :hover {
     font-size: 4rem;
 }
 
@@ -346,7 +341,7 @@
     justify-content: center;
 }
 
-.nav__Footer {
+.footer__Span {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -366,7 +361,7 @@
     padding-top: 1rem;
 }
 
-.ul__Li {
+.footer__Ul-Li {
     display: inline;
     padding: 0px 1rem;
 }
@@ -440,7 +435,7 @@
     grid-template-areas: "nav nav"
                          "hero hero"
                          "onda onda"
-                         "recetas lateral"
+                         "recetas publi"
                          "fotos lateral"
                          "onda2 onda2"
                          "recetas2 recetas2"
@@ -501,6 +496,7 @@
     text-align: center;
     font-family: lobster;
 }
+
 
 /*BARRA LATERAL DE LA PAGINA DE RECETAS*/
 
@@ -609,7 +605,7 @@
         grid-area: fotos;
     }
 
-    ..psection__Recetas2 {
+    .psection__Recetas2 {
         grid-area: recetas2;
     }
 
@@ -627,7 +623,6 @@
         padding-top: 1rem;
     }
 }
-
 
 
 /*PAGINA DE CONTACTO*/
@@ -758,10 +753,7 @@
                          "hero hero"
                          "valora publi"
                          "valora publi"
-                         "recetas publi"
-                         "fotos publi"
                          "onda2 onda2"
-                         "reseña reseña"
                          "recomendada recomendada"
                          "footer footer";
 }
@@ -781,6 +773,24 @@
     width: 100%;
     height: 100%;
 }   
+
+/*PUBLICIDAD EN LAS VALORACIONES*/
+
+.publicidad__Div2 {
+    background-image: url(../assets/cocacola.jpg);
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    margin: 2rem;
+}
+
+.publicidad__Texto2 {
+    font-family: Fascinate;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
 
 
 /*PRIMER GRUPO DE VALORACIONES*/
@@ -802,6 +812,7 @@
 
 .valoraciones__Onda {
     grid-area: onda2;
+    height: 150px;
 }
 
 .section__Publicidad {
@@ -811,6 +822,13 @@
 .section__Publicidad--Anchore {
     padding: 2rem;
 }
+
+/* LUGAR RECOMENDADO DE LA SEMANA*/
+
+.recomendada__Div {
+    grid-area: recomendada;
+}
+
 
 /*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
 

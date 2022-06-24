@@ -1,0 +1,53 @@
+@media screen and (max-width: 480px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav"
+                             "hero"
+                             "texto"
+                             "onda"
+                             "recetas"
+                             "fotos"
+                             "onda2"
+                             "reseña"
+                             "recomendada"
+                             "footer";
+    }
+
+    .nav__Div--Imagen {
+        width: 100%;
+        filter: invert(100%);
+        margin-left: 1.0rem;
+        margin-right: 1.5rem;
+    }
+
+    .lateral {
+        display: none;
+    }
+
+    .section__Publicidad {
+        display: none;
+    }
+
+    .section__Recetas--Div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .footer__Ul {
+        text-align: center;
+        font-size: 1rem;
+        font-family: koulen;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        height: 100%;
+        padding-top: 1rem;
+    }
+}

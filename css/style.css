@@ -1,10 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Concert+One&family=Fascinate&family=Joan&family=Koulen&family=Lobster&family=Macondo&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@1,500&family=Rubik+Glitch&family=Tapestry&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.body {
+.index__Body {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -16,15 +17,551 @@
   align-items: center;
   flex-wrap: nowrap;
   background-color: #000000; }
+  .nav .nav__Imagen {
+    width: 10%;
+    filter: invert(100%);
+    margin-left: 1.5rem; }
   .nav .nav-link {
     font-family: Lobster;
     font-size: 20px;
     color: #ffffff; }
-    .nav .nav-link .nav-link:hover {
-      color: #82e47e; }
-  .nav .nav__Div--Imagen {
-    width: 10%;
-    filter: invert(100%);
-    margin-left: 1.5rem; }
+  .nav .nav-link:hover {
+    color: #82e47e; }
 
-@importo;
+.hero {
+  grid-area: hero;
+  position: relative;
+  height: 85vh;
+  width: 100%; }
+  .hero .hero__Div {
+    width: 100%;
+    height: 100%; }
+    .hero .hero__Div .hero__Div--imagen {
+      height: 100%;
+      width: 100%; }
+  .hero .hero__Titulo {
+    color: white;
+    font-family: Lobster;
+    font-size: 40px;
+    padding-left: 40px;
+    position: absolute;
+    bottom: 200px; }
+
+.onda1 {
+  background: #de3636;
+  background: linear-gradient(180deg, #de3636 18%, #db8141 66%, #dbb194 97%);
+  grid-area: onda;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .onda1 .onda1__Titulo {
+    font-family: Koulen;
+    font-size: 3rem;
+    margin: 70px 50px 10px 50px;
+    color: #000000; }
+    .onda1 .onda1__Titulo .onda1__Titulo:hover {
+      font-size: 4rem; }
+  .onda1 .onda1__Parrafo {
+    font-family: Lobster;
+    font-size: 2rem;
+    padding: 0px 50px 0px 50px; }
+
+.lateral {
+  grid-area: lateral;
+  margin-top: -5px;
+  height: 105%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .lateral .lateral__Titulo {
+    color: black;
+    font-family: koulen;
+    font-size: 3rem;
+    margin-top: 150px;
+    margin-right: 20px; }
+  .lateral .lateral__Lista {
+    font-family: koulen;
+    color: black;
+    font-size: 25px;
+    list-style-type: none;
+    padding-left: 20px; }
+    .lateral .lateral__Lista .lateral__Lista--Item {
+      padding-top: 40px; }
+
+.publicidad {
+  grid-area: publi;
+  padding-top: 5px;
+  background: #de3636;
+  background: linear-gradient(180deg, #de3636 18%, #db8141 66%, #dbb194 97%); }
+  .publicidad .publicidad__Anchore {
+    text-decoration: none; }
+  .publicidad .publicidad__Div {
+    margin: 10px; }
+  .publicidad .publicidad__Texto {
+    font-family: Fascinate;
+    text-align: center;
+    color: #000000;
+    font-size: 20px; }
+
+.section__Recetas {
+  grid-area: recetas;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; }
+  .section__Recetas .section__Recetas--Anchore {
+    text-decoration: none; }
+  .section__Recetas .section__Recetas--Texto {
+    font-family: Lobster;
+    font-size: 3rem;
+    padding-left: 50px;
+    color: black; }
+  .section__Recetas .seccion__Recetas--Parrafo {
+    font-family: Lobster;
+    font-size: 1.5rem;
+    color: #000000;
+    padding-left: 50px; }
+  .section__Recetas .div__Recetas {
+    display: flex;
+    align-items: baseline; }
+    .section__Recetas .div__Recetas .article__Recetas {
+      height: 450px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .section__Recetas .div__Recetas .article__Recetas .article__Recetas--Anchore {
+        height: 50%;
+        width: 80%; }
+      .section__Recetas .div__Recetas .article__Recetas .article__Recetas--Imagen {
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        transition: width 5s;
+        height: 5s; }
+      .section__Recetas .div__Recetas .article__Recetas .article__Recetas--Imagen:hover {
+        height: 110%;
+        width: 110%; }
+      .section__Recetas .div__Recetas .article__Recetas .article__Recetas--Texto {
+        display: flex;
+        padding: 30px;
+        font-family: Playfair Display;
+        flex-direction: column;
+        align-items: center; }
+
+.carrousel {
+  grid-area: fotos; }
+  .carrousel .carrousel__Div {
+    display: flex;
+    padding: 20px; }
+    .carrousel .carrousel__Div .carrousel__Fotos {
+      height: 500px;
+      width: 100%; }
+    .carrousel .carrousel__Div .carrousel__Titulo {
+      font-family: Lobster;
+      font-size: 20px;
+      color: red;
+      padding: 10px 5px 5px 5px; }
+    .carrousel .carrousel__Div .carrousel__Parrafo {
+      font-family: Loan; }
+
+.onda2 {
+  grid-area: onda2;
+  height: 150px; }
+  .onda2 .div__Onda2--Svg {
+    height: 50px; }
+
+.reseñas {
+  grid-area: reseña;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #db8141;
+  padding: 3rem; }
+  .reseñas .reseñas__Titulo {
+    font-family: Playfair Display;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-decoration: none;
+    color: black; }
+    .reseñas .reseñas__Titulo .reseñas__Titulo :hover {
+      font-size: 4rem; }
+  .reseñas .reseñas__Anchore {
+    padding-top: 2rem;
+    text-decoration: none;
+    color: #000000; }
+    .reseñas .reseñas__Anchore .reseñas__Anchore :hover {
+      font-size: 1.5rem;
+      color: #000000; }
+
+.recomendada {
+  grid-area: recomendada;
+  height: 500px;
+  width: 100%; }
+  .recomendada .recomendada__Imagen {
+    opacity: 50%;
+    object-fit: fill;
+    height: 100%;
+    width: 100%; }
+  .recomendada .recomendada__Textos {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: space-between;
+    color: #f8f8f8;
+    font-family: Bungee; }
+    .recomendada .recomendada__Textos .recomendada__Anchore {
+      text-decoration: none; }
+    .recomendada .recomendada__Textos .recomendada__Anchore :hover {
+      font-size: 4rem; }
+
+.publicidad__Div--Publi1 {
+  background-image: url(../assets/Publi1.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi2 {
+  background-image: url(../assets/Publi2.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi3 {
+  background-image: url(../assets/Publi3.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi4 {
+  background-image: url(../assets/Publi4.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi5 {
+  background-image: url(../assets/Publi5.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi6 {
+  background-image: url(../assets/Publi6.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.footer {
+  grid-area: footer;
+  background-color: #000000;
+  justify-content: center; }
+  .footer .footer__Span {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px; }
+    .footer .footer__Span .footer__Ul {
+      text-align: center;
+      font-size: 1rem;
+      font-family: koulen;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      height: 100%;
+      padding-top: 1rem; }
+      .footer .footer__Span .footer__Ul .footer__Ul-Li {
+        display: inline;
+        padding: 0px 1rem; }
+
+@media screen and (max-width: 480px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav" "hero" "texto" "onda" "recetas" "fotos" "onda2" "reseña" "recomendada" "footer"; }
+  .nav__Div--Imagen {
+    width: 100%;
+    filter: invert(100%);
+    margin-left: 1.0rem;
+    margin-right: 1.5rem; }
+  .lateral {
+    display: none; }
+  .section__Publicidad {
+    display: none; }
+  .section__Recetas--Div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
+  .footer__Ul {
+    text-align: center;
+    font-size: 1rem;
+    font-family: koulen;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding-top: 1rem; } }
+
+/*PAGINA DE LAS RECETAS*/
+/*ORGANIZACION DEL CUERPO*/
+.precetas__Body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "nav nav" "hero hero" "onda onda" "recetas publi" "fotos lateral" "onda2 onda2" "recetas2 recetas2" "recomendada recomendada" "footer footer"; }
+
+/*CAROUSEL CON IMAGENES DE RECETAS INICIAL */
+.precetas__Carousel {
+  grid-area: hero;
+  height: 700px; }
+  .precetas__Carousel .precetas__Carousel--Imagen {
+    height: 500px; }
+  .precetas__Carousel .pcarousel__Titulo {
+    font-family: Lobster;
+    font-size: 2rem;
+    color: red;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center; }
+  .precetas__Carousel .pcarousel__Parrafo {
+    font-family: Loan; }
+  .precetas__Carousel .pcarousel__Anchore {
+    text-decoration: none; }
+  .precetas__Carousel .pcarousel__Anchore :hover {
+    font-size: 3rem; }
+
+/*Onda en las recetas*/
+.div__ondarecetas {
+  grid-area: onda;
+  height: 10rem; }
+
+/* Cards de 3 recetas rapidas con un titulo*/
+.psection__Recetas {
+  grid-area: recetas;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0rem 3rem 3rem 3rem; }
+  .psection__Recetas .psection__Recetas--Titulo {
+    text-align: center;
+    font-family: lobster; }
+
+/*BARRA LATERAL DE LA PAGINA DE RECETAS*/
+.plateral {
+  grid-area: lateral;
+  margin-top: -5px;
+  height: 105%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+/*Receta Destacada*/
+.div__Recetadestacada {
+  grid-area: fotos;
+  margin: 0rem 1rem 1rem 1rem;
+  height: 800px; }
+
+.recetadestacada__Imagen {
+  padding: 2rem; }
+
+.div__Recetadestacada--Texto {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: end;
+  font-size: 20px; }
+
+.div__Recetadestacada--Titulo {
+  font-size: 3rem; }
+
+/*Seunda Onda*/
+.recetas__Onda2 {
+  grid-area: onda2;
+  height: 10rem; }
+
+/*SEGUNDA PARTE DE RECETAS*/
+.psection__Recetas2 {
+  grid-area: recetas2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 3rem 3rem 3rem; }
+
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+@media screen and (max-width: 480px) {
+  .precetas__Body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav" "hero" "texto" "onda" "recetas" "fotos" "onda2" "recetas2" "recomendada" "footer"; }
+  .nav__Div--Imagen {
+    width: 100%;
+    filter: invert(100%);
+    margin-left: 1.0rem;
+    margin-right: 1.5rem; }
+  .plateral {
+    display: none; }
+  .psection__Publicidad {
+    display: none; }
+  .psection__Recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
+  .div__Recetadestacada {
+    grid-area: fotos; }
+  .psection__Recetas2 {
+    grid-area: recetas2; } }
+
+/* PAGINA DE LAS VALORACIONES */
+/*ORGANIZACION DEL CUERPO */
+.valoraciones__Body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "nav nav" "hero hero" "valora publi" "valora publi" "onda2 onda2" "recomendada recomendada" "footer footer"; }
+
+/*SECCION DEL HERO DE LA PAGINA DE VALORACIONES*/
+.valoraciones__SectionHero {
+  grid-area: hero;
+  height: 50vh; }
+
+.valoraciones__Hero--Div {
+  height: 100%; }
+
+.valoraciones__section--Imagen {
+  width: 100%;
+  height: 100%; }
+
+/*PUBLICIDAD EN LAS VALORACIONES*/
+.publicidad__Div2 {
+  background-image: url(../assets/cocacola.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Texto2 {
+  font-family: Fascinate;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  font-size: 20px; }
+
+/*PRIMER GRUPO DE VALORACIONES*/
+.valoraciones__Div--Reseñas {
+  grid-area: valora;
+  padding: 2rem; }
+
+.valoraciones__Card--Imagen {
+  height: 100%; }
+
+.valoraciones__Card--Imagen :hover {
+  height: 90%; }
+
+/*ONDA SEPARADORA*/
+.valoraciones__Onda {
+  grid-area: onda2;
+  height: 150px; }
+
+.section__Publicidad {
+  grid-area: publi; }
+
+.section__Publicidad--Anchore {
+  padding: 2rem; }
+
+/* LUGAR RECOMENDADO DE LA SEMANA*/
+.recomendada__Div {
+  grid-area: recomendada; }
+
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+@media screen and (max-width: 480px) {
+  .valoraciones__Body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav" "hero" "valora" "onda2" "recomenda" "footer"; }
+  .nav__Div--Imagen {
+    width: 100%;
+    filter: invert(100%);
+    margin-left: 1.0rem;
+    margin-right: 1.5rem; }
+  .plateral {
+    display: none; }
+  .psection__Publicidad {
+    display: none; }
+  .recomendada__Div {
+    grid-area: recomenda; } }
+
+/*PAGINA DE CONTACTO*/
+/*CUERPO DEL CONTACTO*/
+.contacto__body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 100px auto auto;
+  grid-template-areas: "nav" "titulo" "info1" "footer"; }
+
+.contacto__Header {
+  grid-area: nav;
+  background-color: #070303;
+  position: sticky;
+  top: 0px;
+  z-index: 99; }
+
+.contacto__Div {
+  grid-area: titulo;
+  font-family: Koulen;
+  font-size: 40px;
+  padding: 10px;
+  background-color: #bbb5b1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main__Titulo--Contacto {
+  font-size: 60px;
+  padding: 15px; }
+
+.contacto__Main {
+  grid-area: info1;
+  padding: 50px;
+  background-image: url(../assets/imagenfondotexto.jpg); }
+
+.contacto__Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.Section__Div {
+  padding: 10px; }
+
+.contacto__footer {
+  grid-area: footer;
+  background-color: black; }
+
+.footer__Ul {
+  text-align: center;
+  font-size: 20px;
+  font-family: koulen;
+  color: beige;
+  height: 100%;
+  padding-top: 10px; }
+
+.ul__Li {
+  display: inline;
+  padding: 0px 20px; }

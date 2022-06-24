@@ -3,7 +3,7 @@
     grid-area: footer;
     background-color: #000000;
     justify-content: center;
-    .nav__Footer {
+    .footer__Span {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -19,13 +19,11 @@
             color: rgb(255, 255, 255);
             height: 100%;
             padding-top: 1rem;
-            .ul__Li {
+            .footer__Ul-Li {
                 display: inline;
                 padding: 0px 1rem;
             }
         }
     }
-    
-    
 }
 

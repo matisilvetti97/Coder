@@ -1,0 +1,178 @@
+/*PAGINA DE LAS RECETAS*/
+
+/*ORGANIZACION DEL CUERPO*/
+
+.precetas__Body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav"
+                         "hero hero"
+                         "onda onda"
+                         "recetas publi"
+                         "fotos lateral"
+                         "onda2 onda2"
+                         "recetas2 recetas2"
+                         "recomendada recomendada"
+                         "footer footer";
+}
+
+/*CAROUSEL CON IMAGENES DE RECETAS INICIAL */
+
+.precetas__Carousel {
+    grid-area: hero;
+    height: 700px;
+    .precetas__Carousel--Imagen{
+        height: 500px;
+    }
+    
+    .pcarousel__Titulo {
+        font-family: Lobster;
+        font-size: 2rem;
+        color: red;
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+    
+    .pcarousel__Parrafo {
+        font-family: Loan;
+    }
+    
+    .pcarousel__Anchore {
+        text-decoration: none;
+    }
+    
+    .pcarousel__Anchore :hover {
+        font-size: 3rem;
+    }
+}
+
+
+/*Onda en las recetas*/
+
+.div__ondarecetas {
+    grid-area: onda;
+    height: 10rem;
+}
+
+/* Cards de 3 recetas rapidas con un titulo*/
+
+.psection__Recetas{
+    grid-area: recetas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0rem 3rem 3rem 3rem;
+    .psection__Recetas--Titulo {
+        text-align: center;
+        font-family: lobster;
+    }
+}
+
+
+
+/*BARRA LATERAL DE LA PAGINA DE RECETAS*/
+
+.plateral {
+    grid-area: lateral;
+    margin-top: -5px;
+    height: 105%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Receta Destacada*/
+
+.div__Recetadestacada {
+    grid-area: fotos;
+    margin: 0rem 1rem 1rem 1rem;
+    height: 800px;
+}
+
+.recetadestacada__Imagen {
+    padding: 2rem;
+}
+
+.div__Recetadestacada--Texto {
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: end;
+    font-size: 20px;
+}
+
+.div__Recetadestacada--Titulo {
+    font-size: 3rem;
+}
+
+/*Seunda Onda*/
+
+.recetas__Onda2 {
+    grid-area: onda2;
+    height: 10rem;
+}
+
+/*SEGUNDA PARTE DE RECETAS*/
+
+.psection__Recetas2 {
+    grid-area: recetas2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+
+@media screen and (max-width: 480px) {
+
+    .precetas__Body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav"
+                             "hero"
+                             "texto"
+                             "onda"
+                             "recetas"
+                             "fotos"
+                             "onda2"
+                             "recetas2"
+                             "recomendada"
+                             "footer";
+    }
+
+    .nav__Div--Imagen {
+        width: 100%;
+        filter: invert(100%);
+        margin-left: 1.0rem;
+        margin-right: 1.5rem;
+    }
+
+    .plateral {
+        display: none;
+    }
+
+    .psection__Publicidad {
+        display: none;
+    }
+
+    .psection__Recetas {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .div__Recetadestacada {
+        grid-area: fotos;
+    }
+
+    .psection__Recetas2 {
+        grid-area: recetas2;
+    }
+
+}

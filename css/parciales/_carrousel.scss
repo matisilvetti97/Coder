@@ -1,21 +1,19 @@
-.contenedor__Fotos {
+.carrousel {
     grid-area: fotos;
-    .row_Carrousel{
+    .carrousel__Div{
         display: flex;
         padding: 20px;
-        .contendor__Fotos--Tamaño {
+        .carrousel__Fotos {
             height: 500px;
             width: 100%;
         }
-        
-        .carousel__Titulo {
+        .carrousel__Titulo {
             font-family: Lobster;
             font-size: 20px;
             color: red;
             padding: 10px 5px 5px 5px;
         }
-        
-        .carousel__Parrafo {
+        .carrousel__Parrafo {
             font-family: Loan;
         }
     }

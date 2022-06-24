@@ -1,29 +1,26 @@
 
-.recomendada__Div {
+.recomendada {
     grid-area: recomendada;
     height: 500px;
     width: 100%;
-    .recomendada__Div--Imagen {
+    .recomendada__Imagen {
         opacity: 50%;
         object-fit: fill;
         height: 100%;
         width: 100%;
     }
-    
-    .recomendada__Div--Textos {
+    .recomendada__Textos {
         display: flex;
         flex-direction: column;
         padding: 5rem;
         justify-content: space-between;
         color: #f8f8f8;
         font-family: Bungee;
-        .recomendada__Div__Anchore {
+        .recomendada__Anchore {
             text-decoration: none;
         }
-        
-        .recomendada__Div__Anchore :hover {
+        .recomendada__Anchore :hover {
             font-size: 4rem;
         }
     }
-    
 }
