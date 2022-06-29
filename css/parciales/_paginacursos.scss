@@ -1,0 +1,33 @@
+/* PAGINA DE LOS CURSOS */
+
+/*CUERPO GENERAL DE LOS CURSOS*/
+
+.cursos__Body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer"
+}
+
+/*MAIN DE LOS CURSOS*/
+
+.cursos__Main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "hero hero"
+                         "onda onda"
+                         "consejo consejo"
+                         "cursos publi"
+                         "cursos2 lateral"
+                         "oferta oferta";
+}
+
+.cursos__Hero {
+    grid-area: hero;
+    height: 80vh;
+    background-image: url(../assets/clasedecocina.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+}

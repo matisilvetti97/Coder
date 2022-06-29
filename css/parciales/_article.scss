@@ -1,7 +1,7 @@
 .section__Recetas {
     grid-area: recetas;
-    margin-top: -5px;
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -35,8 +35,8 @@
             justify-content: space-evenly;
             align-items: center;
             .article__Recetas--Anchore {
-                height: 50%;
-                width: 80%;
+                height: 15rem;
+                width: 15rem;
             }
             
             .article__Recetas--Imagen {
@@ -47,8 +47,8 @@
             }
             
             .article__Recetas--Imagen:hover{
-                height: 110%;
-                width: 110%;
+                height: 105%;
+                width: 105%;
             }
             
             .article__Recetas--Texto {

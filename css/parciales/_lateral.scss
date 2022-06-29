@@ -1,27 +1,32 @@
+/*Seccion Lateral*/
+
 .lateral {
     grid-area: lateral;
     margin-top: -5px;
-    height: 105%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.808);
     .lateral__Titulo {
-        color: rgb(0, 0, 0);
+        color: rgb(253, 253, 253);
         font-family: koulen;
         font-size: 3rem;
-        margin-top: 150px;
-        margin-right: 20px;
+        margin: 2rem;
+
     }
+    
     .lateral__Lista {
         font-family: koulen;
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 25px;
         list-style-type: none;
         padding-left: 20px;
+        justify-content: space-between;
         .lateral__Lista--Item {
             padding-top: 40px;
         }
     }
     
-}
+}  
+
 

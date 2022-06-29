@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cursos, cocina, gastronomia, escuela, recetas faciles">
     <meta name="description" content="Inscribite a los mejores cursos de cocina del mercado, con increible salida laboral">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="./assets/favicon.jpg">
     <title>CURSOS AÑO 2022</title>
 </head>
-<body>
-    <header class="header">
+
+<body class="cursos__Body">
+
+        <!--Navegacion-->
+
         <nav class="nav">
-            <img class="header__Imagen" src="../assets/cuchi.png" alt="">
-            <ul class="nav__Ul">
-                <li class="li listOpener"><a class="nav__A" href="../index.html">Inicio</a></li>                
-                <li class="li listOpener"><a class="nav__A" href="../vistas/recetas.html">Recetas</a></li>
-                <li class="li listOpener"><a class="nav__A" href="../vistas/valoraciones.html">Valoraciones</a></li>
-                <li class="li listOpener"><a class="nav__A" li" href="../vistas/contacto.html">Contacto</a></li>
+            <div>
+                <a href="./index.html"><img class="nav__Imagen" src="../assets/cubiertos.png" alt=""></a>
+            </div>
+            <div>
+                <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../vistas/valoraciones.html">Valoraciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../vistas/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../vistas/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+          </nav>
+        
+    <main class="cursos__Main">
+        <section class="cursos__Hero">
+        </section>
+    </main>
+
+<!--Footer con datos-->
+
+<footer class="navbar footer">
+    <div class="container-fluid justify-content-center">
+        <span class="navbar-text footer__Span">
+            <ul class="footer__Ul">
+              <li class="footer__Ul-Li">Telefono de contacto: 381745896</li>
+              <li class="footer__Ul-Li">Instagram: rinconculinario</li>
+              <li class="footer__Ul-Li">Email:rinconculinario@hotmail.com</li>
             </ul>
-        </nav>
-    </header>
-    <main> 
-        <div>
-            <h1 class="main__Titulo">RINCÓN CULINARIO</h1>
-        </div>
-        <div class="main__Div--Clase">
-            <img class="div__Imagen--Clase" src="../assets/clasedecocina.jpg" alt="restaurante">
-        </div>  
-        <section class="cursos">
-            <h3 class="titulo__Cursos">CURSOS DISPONIBLES 2022</h3>
-            <article class="cursos__Article">
-                <img class="cursos__Article--Imagenes" src ="../assets/PASTELERIA.jpeg" alt="Pasteleria">
-                <div class="div__Cursos">
-                    <h4>PASTELERIA</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum facilis earum, magnam est consectetur quasi maxime deserunt corporis nobis quam rerum corrupti voluptatum deleniti ut? Nesciunt excepturi magnam fugiat?</p>
-                </div>
-            </article>
-            <article class="cursos__Article">
-                <img class="cursos__Article--Imagenes" src="../assets/cocina argentina.jpg" alt="Cocina Argentina">
-                <div class="div__Cursos">
-                    <h4>GASTRONOMIA ARGENTINA </h4>
-                    <p>LOREM ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus fuga quidem ipsam doloribus reiciendis voluptates, doloremque unde perspiciatis cumque aliquam ducimus fugit, ratione voluptas odit at voluptatum! Distinctio modi.</p>
-                </div>
-            </article>
-            <article class="cursos__Article">
-                <img class="cursos__Article--Imagenes" src="../assets/cocina europea.jpg" alt="Gastronomia Europea">
-                <div class="div__Cursos">
-                    <h4>GASTRONOMIA EUROPEA</h4>
-                    <p>LOREM ipsum dolor sit amet, consectetur adipisicing elit. Earum, debitis quasi? Vel quod culpa magni porro libero tempora doloribus tenetur et eum, laudantium quas! Rem dolor vel minima. Aut optio itaque officia! Autem veniam illo placeat ea quos maxime, accusantium id error cum eaque officia!</p>
-                </div>
-            </article>
-        </section> 
-        <hr>
-    </main>   
-    <footer class="footer">
-        <ul class="footer__Ul">
-            <li class="ul__Li">Telefono de contacto: 381745896 </li>
-            <li class="ul__Li">Instagram: rinconculinario</li>
-            <li class="ul__Li">Email:rinconculinario@hotmail.com</li>
-        </ul>
-    </footer>
+        </span>
+    </div>
+</footer>
+
+    <script src="../js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

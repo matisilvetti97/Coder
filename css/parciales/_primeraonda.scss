@@ -1,6 +1,7 @@
+/*Svg de Onda*/
+
 .onda1 {
-    background: rgb(222,54,54);
-    background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
+    background: rgb(255, 255, 255);
     grid-area: onda;
     display: flex;
     flex-direction: column;
@@ -9,12 +10,14 @@
     .onda1__Titulo {
         font-family: Koulen;
         font-size: 3rem;
-        margin: 70px 50px 10px 50px;
         color:#000000;
-        .onda1__Titulo:hover {
-            font-size: 4rem;
-        }
+        padding: 2rem;
     }
+    
+    .onda1__Titulo:hover {
+        font-size: 4rem;
+    }
+    
     .onda1__Parrafo {
         font-family: Lobster;
         font-size: 2rem;

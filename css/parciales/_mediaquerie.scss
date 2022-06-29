@@ -1,19 +1,18 @@
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+
 @media screen and (max-width: 480px) {
 
-    .body {
+    .index__Main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "nav"
-                             "hero"
-                             "texto"
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "hero"
                              "onda"
                              "recetas"
                              "fotos"
                              "onda2"
                              "reseña"
-                             "recomendada"
-                             "footer";
+                             "recomendada";
     }
 
     .nav__Div--Imagen {
@@ -27,11 +26,11 @@
         display: none;
     }
 
-    .section__Publicidad {
+    .publicidad {
         display: none;
     }
 
-    .section__Recetas--Div {
+    .div__Recetas {
         display: flex;
         flex-direction: column;
         align-items: baseline;

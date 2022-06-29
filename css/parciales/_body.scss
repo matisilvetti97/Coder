@@ -1,15 +1,7 @@
 .index__Body {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "nav nav"
-                         "hero hero"
-                         "texto publi"
-                         "onda publi"
-                         "recetas lateral"
-                         "fotos lateral"
-                         "onda2 onda2"
-                         "reseña reseña"
-                         "recomendada recomendada"
-                         "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer"
 }

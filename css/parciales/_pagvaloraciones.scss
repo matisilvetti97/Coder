@@ -5,13 +5,25 @@
 
 .valoraciones__Body {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
+}
+
+/*ORGANIZACION DEL MAIN */
+
+.valoraciones__Main {
+    display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: "nav nav"
                          "hero hero"
                          "valora publi"
                          "valora publi"
                          "onda2 onda2"
+                         "video video"
                          "recomendada recomendada"
                          "footer footer";
 }
@@ -81,45 +93,88 @@
     padding: 2rem;
 }
 
+/*VIDEOS DEL RECORRIDO DE RESTAURANTES*/
+ .valoraciones__Sectionvideo {
+    grid-area: video;
+    font-family: Koulen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .valoraciones__Sectionvideo--Div {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .valoraciones__Iframe {
+    display: inline-block;
+    margin-left: 1rem;
+ }
+
 /* LUGAR RECOMENDADO DE LA SEMANA*/
 
 .recomendada__Div {
     grid-area: recomendada;
 }
 
+.recomendada__Div--Textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.recomendada__Div--Imagen {
+    opacity: 0.3;
+}
+
+.recomendada__Div__Anchore {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.recomendada__Div__Texto {
+    color: rgb(204, 210, 233);
+    font-family: koulen;
+    font-size: 1.5rem;
+}
 
 /*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 
-    .valoraciones__Body {
+    
+    /*ORGANIZACION DEL MAIN */
+    
+    .valoraciones__Main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-areas: "nav"
-                            "hero"
-                            "valora"
-                            "onda2"
-                            "recomenda"
-                            "footer"
-    }
-
-    .nav__Div--Imagen {
-        width: 100%;
-        filter: invert(100%);
-        margin-left: 1.0rem;
-        margin-right: 1.5rem;
+                             "hero"
+                             "valora"
+                             "valora"
+                             "onda2"
+                             "video"
+                             "recomendada"
+                             "footer";
     }
 
     .plateral {
         display: none;
     }
 
-    .psection__Publicidad {
+    .publicidad {
         display: none;
     }
 
+    .valoraciones__Sectionvideo--Div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     }
+
     .recomendada__Div {
-        grid-area: recomenda;
+        grid-area: recomendada;
     }
 }

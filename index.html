@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,12 @@
     <link rel="icon" href=".//assets/favicon.jpg">
     <title>Rincón Culinario</title>
 </head>
+
 <body class="index__Body">
 
     <!--Navegacion-->
 
-    <div class="nav">
+    <nav class="nav">
       <div>
         <a href="./index.html"><img class="nav__Imagen" src="./assets/cubiertos.png" alt=""></a>
       </div>
@@ -35,34 +37,32 @@
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
 
 
-    <!--Hero Section-->
+  <main class="index__Main">
 
-    <section class="hero">
-        <div class="hero__Div">
-            <img class="hero__Div--imagen img-fluid" src="./assets/fondedelhero.jpg" alt="Plato gourmet con carne y verduras">
-        </div>
-        <div class="hero__Titulo" >
-            <h1>RINCÓN CULINARIO</h1>
-            <p>Un espacio para los amantes de la cocina...</p> 
-        </div>
-    </section>
-
-    <!--Parte del Svg con la onda-->
-
-    <div class="onda1">
-        <h2 class="onda1__Titulo">Todo lo que tenemos para vos</h2>
-        <p class="onda1__Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#ffffff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,213.3C384,224,480,224,576,213.3C672,203,768,181,864,170.7C960,160,1056,160,1152,186.7C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-
-    <!--Sector lateral con opciones-->
-
-    <div class="lateral">
+      <!--Hero Section-->
+  
+      <section class="hero">
+          <div data-aos="fade-righ" class="hero__Titulo" >
+              <h1>RINCÓN CULINARIO</h1>
+              <p>Un espacio para los amantes de la cocina...</p>
+          </div>
+      </section>
+  
+      <!--Parte del Svg con la onda-->
+  
+      <div class="onda1">
+          <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(5, 6, 9, 1)" offset="0%"></stop><stop stop-color="rgba(219, 129, 65, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,63L21.8,63C43.6,63,87,63,131,59.5C174.5,56,218,49,262,70C305.5,91,349,140,393,161C436.4,182,480,175,524,164.5C567.3,154,611,140,655,136.5C698.2,133,742,140,785,122.5C829.1,105,873,63,916,56C960,49,1004,77,1047,101.5C1090.9,126,1135,147,1178,133C1221.8,119,1265,70,1309,49C1352.7,28,1396,35,1440,35C1483.6,35,1527,28,1571,35C1614.5,42,1658,63,1702,91C1745.5,119,1789,154,1833,164.5C1876.4,175,1920,161,1964,140C2007.3,119,2051,91,2095,77C2138.2,63,2182,63,2225,56C2269.1,49,2313,35,2356,28C2400,21,2444,21,2487,49C2530.9,77,2575,133,2618,136.5C2661.8,140,2705,91,2749,80.5C2792.7,70,2836,98,2880,101.5C2923.6,105,2967,84,3011,70C3054.5,56,3098,49,3120,45.5L3141.8,42L3141.8,210L3120,210C3098.2,210,3055,210,3011,210C2967.3,210,2924,210,2880,210C2836.4,210,2793,210,2749,210C2705.5,210,2662,210,2618,210C2574.5,210,2531,210,2487,210C2443.6,210,2400,210,2356,210C2312.7,210,2269,210,2225,210C2181.8,210,2138,210,2095,210C2050.9,210,2007,210,1964,210C1920,210,1876,210,1833,210C1789.1,210,1745,210,1702,210C1658.2,210,1615,210,1571,210C1527.3,210,1484,210,1440,210C1396.4,210,1353,210,1309,210C1265.5,210,1222,210,1178,210C1134.5,210,1091,210,1047,210C1003.6,210,960,210,916,210C872.7,210,829,210,785,210C741.8,210,698,210,655,210C610.9,210,567,210,524,210C480,210,436,210,393,210C349.1,210,305,210,262,210C218.2,210,175,210,131,210C87.3,210,44,210,22,210L0,210Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(5, 6, 9, 1)" offset="0%"></stop><stop stop-color="rgba(13.178, 20.778, 43.579, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,0L21.8,17.5C43.6,35,87,70,131,80.5C174.5,91,218,77,262,91C305.5,105,349,147,393,168C436.4,189,480,189,524,168C567.3,147,611,105,655,80.5C698.2,56,742,49,785,38.5C829.1,28,873,14,916,38.5C960,63,1004,126,1047,150.5C1090.9,175,1135,161,1178,143.5C1221.8,126,1265,105,1309,87.5C1352.7,70,1396,56,1440,52.5C1483.6,49,1527,56,1571,70C1614.5,84,1658,105,1702,94.5C1745.5,84,1789,42,1833,24.5C1876.4,7,1920,14,1964,14C2007.3,14,2051,7,2095,24.5C2138.2,42,2182,84,2225,84C2269.1,84,2313,42,2356,42C2400,42,2444,84,2487,108.5C2530.9,133,2575,140,2618,150.5C2661.8,161,2705,175,2749,182C2792.7,189,2836,189,2880,189C2923.6,189,2967,189,3011,161C3054.5,133,3098,77,3120,49L3141.8,21L3141.8,210L3120,210C3098.2,210,3055,210,3011,210C2967.3,210,2924,210,2880,210C2836.4,210,2793,210,2749,210C2705.5,210,2662,210,2618,210C2574.5,210,2531,210,2487,210C2443.6,210,2400,210,2356,210C2312.7,210,2269,210,2225,210C2181.8,210,2138,210,2095,210C2050.9,210,2007,210,1964,210C1920,210,1876,210,1833,210C1789.1,210,1745,210,1702,210C1658.2,210,1615,210,1571,210C1527.3,210,1484,210,1440,210C1396.4,210,1353,210,1309,210C1265.5,210,1222,210,1178,210C1134.5,210,1091,210,1047,210C1003.6,210,960,210,916,210C872.7,210,829,210,785,210C741.8,210,698,210,655,210C610.9,210,567,210,524,210C480,210,436,210,393,210C349.1,210,305,210,262,210C218.2,210,175,210,131,210C87.3,210,44,210,22,210L0,210Z"></path></svg>
+          <h2 class="onda1__Titulo">Todo lo que tenemos para vos</h2>
+          <p class="onda1__Parrafo">Si el mundo de la cocina te encanta, en Rincón Culinario encontrarás una infinidad de recetas para deleitar a familiares y amigos, además de cursos de todo tipo y reseñas de los chefs más experimentados del ambito.</p>
+          <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(5, 6, 9, 1)" offset="0%"></stop><stop stop-color="rgba(219, 129, 65, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,63L21.8,63C43.6,63,87,63,131,59.5C174.5,56,218,49,262,70C305.5,91,349,140,393,161C436.4,182,480,175,524,164.5C567.3,154,611,140,655,136.5C698.2,133,742,140,785,122.5C829.1,105,873,63,916,56C960,49,1004,77,1047,101.5C1090.9,126,1135,147,1178,133C1221.8,119,1265,70,1309,49C1352.7,28,1396,35,1440,35C1483.6,35,1527,28,1571,35C1614.5,42,1658,63,1702,91C1745.5,119,1789,154,1833,164.5C1876.4,175,1920,161,1964,140C2007.3,119,2051,91,2095,77C2138.2,63,2182,63,2225,56C2269.1,49,2313,35,2356,28C2400,21,2444,21,2487,49C2530.9,77,2575,133,2618,136.5C2661.8,140,2705,91,2749,80.5C2792.7,70,2836,98,2880,101.5C2923.6,105,2967,84,3011,70C3054.5,56,3098,49,3120,45.5L3141.8,42L3141.8,210L3120,210C3098.2,210,3055,210,3011,210C2967.3,210,2924,210,2880,210C2836.4,210,2793,210,2749,210C2705.5,210,2662,210,2618,210C2574.5,210,2531,210,2487,210C2443.6,210,2400,210,2356,210C2312.7,210,2269,210,2225,210C2181.8,210,2138,210,2095,210C2050.9,210,2007,210,1964,210C1920,210,1876,210,1833,210C1789.1,210,1745,210,1702,210C1658.2,210,1615,210,1571,210C1527.3,210,1484,210,1440,210C1396.4,210,1353,210,1309,210C1265.5,210,1222,210,1178,210C1134.5,210,1091,210,1047,210C1003.6,210,960,210,916,210C872.7,210,829,210,785,210C741.8,210,698,210,655,210C610.9,210,567,210,524,210C480,210,436,210,393,210C349.1,210,305,210,262,210C218.2,210,175,210,131,210C87.3,210,44,210,22,210L0,210Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(5, 6, 9, 1)" offset="0%"></stop><stop stop-color="rgba(13.178, 20.778, 43.579, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,0L21.8,17.5C43.6,35,87,70,131,80.5C174.5,91,218,77,262,91C305.5,105,349,147,393,168C436.4,189,480,189,524,168C567.3,147,611,105,655,80.5C698.2,56,742,49,785,38.5C829.1,28,873,14,916,38.5C960,63,1004,126,1047,150.5C1090.9,175,1135,161,1178,143.5C1221.8,126,1265,105,1309,87.5C1352.7,70,1396,56,1440,52.5C1483.6,49,1527,56,1571,70C1614.5,84,1658,105,1702,94.5C1745.5,84,1789,42,1833,24.5C1876.4,7,1920,14,1964,14C2007.3,14,2051,7,2095,24.5C2138.2,42,2182,84,2225,84C2269.1,84,2313,42,2356,42C2400,42,2444,84,2487,108.5C2530.9,133,2575,140,2618,150.5C2661.8,161,2705,175,2749,182C2792.7,189,2836,189,2880,189C2923.6,189,2967,189,3011,161C3054.5,133,3098,77,3120,49L3141.8,21L3141.8,210L3120,210C3098.2,210,3055,210,3011,210C2967.3,210,2924,210,2880,210C2836.4,210,2793,210,2749,210C2705.5,210,2662,210,2618,210C2574.5,210,2531,210,2487,210C2443.6,210,2400,210,2356,210C2312.7,210,2269,210,2225,210C2181.8,210,2138,210,2095,210C2050.9,210,2007,210,1964,210C1920,210,1876,210,1833,210C1789.1,210,1745,210,1702,210C1658.2,210,1615,210,1571,210C1527.3,210,1484,210,1440,210C1396.4,210,1353,210,1309,210C1265.5,210,1222,210,1178,210C1134.5,210,1091,210,1047,210C1003.6,210,960,210,916,210C872.7,210,829,210,785,210C741.8,210,698,210,655,210C610.9,210,567,210,524,210C480,210,436,210,393,210C349.1,210,305,210,262,210C218.2,210,175,210,131,210C87.3,210,44,210,22,210L0,210Z"></path></svg>
+      </div>
+  
+      <!--Sector lateral con opciones-->
+  
+      <aside class="lateral">
         <h3 class="lateral__Titulo">CATEGORIAS</h3>
         <ul class="lateral__Lista">
             <li class="lateral__Lista--Item">ENTRADAS</li>
@@ -70,156 +70,157 @@
             <li class="lateral__Lista--Item">CARNES</li>
             <li class="lateral__Lista--Item">VEGETARIANOS</li>
             <li class="lateral__Lista--Item">PLATOS RAPIDOS</li>
-            <li class="lateral__Lista--Item">PARRILLA Y FUEGOS</li>
-            <li class="lateral__Lista--Item">COMIDA PARA CELIACOS</li>
             <li class="lateral__Lista--Item">COCINA INTERNACIONAL</li>
             <li class="lateral__Lista--Item">POSTRES</li>
-            <li class="lateral__Lista--Item">TRAGOS</li>
         </ul>
-    </div>
-
-    <!--Parte lateral de la publicidad-->
-    <section class="publicidad">
-      <a class="publicidad__Anchore" href="https://www.coca-cola.com.ar/"><div class="card publicidad__Div--Publi1" style="width: 18rem;">
-          <p class="card-text publicidad__Texto">DESTAPA LA FELICIDAD</p>
-        </div>
-      </div></a>
-      <a class="publicidad__Anchore" href="https://www.personal.com.ar/"><div class="card publicidad__Div--Publi2" style="width: 18rem;">
-        <div class="card-body">
-          <p class="card-text publicidad__Texto">PERSONAL</p>
-        </div>
-      </div></a>
-    </section>
-
-
-    <!--Sector de las Recetas-->
-
-    <section class="section__Recetas">
-        <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
-        <p class="seccion__Recetas--Parrafo">Clásicos que no pueden faltar en buen hogar Argentino</p>
-        <div class="div__Recetas">
-            <article class="article__Recetas">
-                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/empanadasdepollo.jpg" alt=""></a>
-                <div class="article__Recetas--Texto">
-                    <h5>EMPANADAS DE POLLO</h5> 
-                    <p>Una receta facil y con pocos ingredientes ideal para congelar y tener listas para salir de apuros.</p>
+      </aside>
+  
+      <!--Parte lateral de la publicidad-->
+      <aside class="publicidad">
+        <a class="publicidad__Anchore" href="https://www.coca-cola.com.ar/"><div class="card publicidad__Div--Publi1" style="width: 18rem;">
+          </div>
+        </div></a>
+        <a class="publicidad__Anchore" href="https://www.personal.com.ar/"><div class="card publicidad__Div--Publi2" style="width: 18rem;">
+          <div class="card-body">
+          </div>
+        </div></a>
+        <a class="publicidad__Anchore" href="https://www.mercadolibre.com.ar/"><div class="card publicidad__Div--Publi3" style="width: 18rem;">
+          <div class="card-body">
+          </div>
+        </div></a>
+      </aside>
+  
+      <!--Sector de las Recetas-->
+  
+      <section class="section__Recetas">
+          <a class="section__Recetas--Anchore" href=".//vistas/recetas.html"> <p class="section__Recetas--Texto">RECETAS TRADICIONALES</p> </a>
+          <p class="seccion__Recetas--Parrafo">Clásicos que no pueden faltar en buen hogar Argentino</p>
+          <div class="div__Recetas">
+              <article class="article__Recetas">
+                  <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/empanadasdepollo.jpg" alt=""></a>
+                  <div class="article__Recetas--Texto">
+                      <h5>EMPANADAS DE POLLO</h5> 
+                      <p>Una receta facil y con pocos ingredientes ideal para congelar y tener listas para salir de apuros.</p>
+                  </div>
+              </article>
+              <article class="article__Recetas">
+                  <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/guisodelentejas.jpg" alt=""></a>
+                  <div class="article__Recetas--Texto">
+                      <h5>GUISO DE LENTEJAS</h5>
+                      <p>Animate a probar esta receta ahora que se viene el invierno.</p>
+                  </div>
+              </article>
+              <article class="article__Recetas">
+                  <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/bifealacriolla.jpg" alt=""> </a>
+                  <div class="article__Recetas--Texto">
+                      <h5>BIFE A LA CRIOLLA</h5>
+                      <p>Una opcion tradicional que si bien lleva su tiempo de preparación, te aseguramos que valdrá la pena.</p>
+                  </div>
+          </div>
+      </section>
+  
+    <!--Carrousel con fotos-->
+    <div class="carrousel">
+    <div class="carrousel__Div">
+        <div class="col-md-12 d-flex-column justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="./vistas/recetas.html"><img src="./assets/bifealacriolla.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                    <h3 class="carrousel__Titulo">ESTOFADO A LA CRIOLLA</h3>
+                    <p class="carrousel__Parrafo">Este rico platillo es una receta casera y popular en los hogares argentinos. Muy sencilla de preparar, el sabor de la carne se une al dulzor de la zanahoria con la cebolla y las papas, condimentadas con una mezcla de comino, orégano.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./vistas/recetas.html"><img src="./assets/colitarellena.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                    <h3 class="carrousel__Titulo">COLITA DE CUADRIL RELLENA</h3>
+                    <p class="carrousel__Parrafo">La colita de cuadril rellena es una comida sabrosa por sus ingredientes y la forma de rellenarla. Las capas de relleno dejan apreciar bien los ingredientes sin perder el sabor principal de la carne.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./vistas/recetas.html"><img src="./assets/ARROZCONMARISCOS.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
+                    <h3 class="carrousel__Titulo">PAELLA CON MARISCOS</h3>
+                    <p class="carrousel__Parrafo">Esta receta de paella de mariscos, y las recetas en general con frutos de mar, esas que son únicas, especiales para cocinar siempre interesan mucho para quedar re bien con cualquier persona o simplemente para deleitarnos, preparando una cita con uno mismo, cocinarse rico y tomar un buen vino.</p>
+                  </div>
                 </div>
-            </article>
-            <article class="article__Recetas">
-                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/guisodelentejas.jpg" alt=""></a>
-                <div class="article__Recetas--Texto">
-                    <h5>GUISO DE LENTEJAS</h5>
-                    <p>Animate a probar esta receta ahora que se viene el invierno.</p>
-                </div>
-            </article>
-            <article class="article__Recetas">
-                <a class="article__Recetas--Anchore" href=".//vistas/recetas.html"><img class="article__Recetas--Imagen" src=".//assets/bifealacriolla.jpg" alt=""> </a>
-                <div class="article__Recetas--Texto">
-                    <h5>BIFE A LA CRIOLLA</h5>
-                    <p>Una opcion tradicional que si bien lleva su tiempo de preparación, te aseguramos que valdrá la pena.</p>
-                </div>
-        </div>
-    </section>
-
-<!--Carrousel con fotos-->
-<div class="carrousel">
-  <div class="carrousel__Div">
-      <div class="col-md-12 d-flex-column justify-content-center">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="./vistas/recetas.html"><img src="./assets/bifealacriolla.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
-                  <h3 class="carrousel__Titulo">ESTOFADO A LA CRIOLLA</h3>
-                  <p class="carrousel__Parrafo">Este rico platillo es una receta casera y popular en los hogares argentinos. Muy sencilla de preparar, el sabor de la carne se une al dulzor de la zanahoria con la cebolla y las papas, condimentadas con una mezcla de comino, orégano.</p>
-                </div>
-                <div class="carousel-item">
-                  <a href="./vistas/recetas.html"><img src="./assets/colitarellena.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
-                  <h3 class="carrousel__Titulo">COLITA DE CUADRIL RELLENA</h3>
-                  <p class="carrousel__Parrafo">La colita de cuadril rellena es una comida sabrosa por sus ingredientes y la forma de rellenarla. Las capas de relleno dejan apreciar bien los ingredientes sin perder el sabor principal de la carne.</p>
-                </div>
-                <div class="carousel-item">
-                  <a href="./vistas/recetas.html"><img src="./assets/ARROZCONMARISCOS.jpg" class="d-block carrousel__Fotos w-100" alt="..."></a>
-                  <h3 class="carrousel__Titulo">PAELLA CON MARISCOS</h3>
-                  <p class="carrousel__Parrafo">Esta receta de paella de mariscos, y las recetas en general con frutos de mar, esas que son únicas, especiales para cocinar siempre interesan mucho para quedar re bien con cualquier persona o simplemente para deleitarnos, preparando una cita con uno mismo, cocinarse rico y tomar un buen vino.</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+        </div>
+    </div>
+    </div>
+  
+      <!--Seccion de la ONDA debajo-->
+      <div class="onda2">
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(219, 129, 65, 1)" offset="0%"></stop><stop stop-color="rgba(219, 214.001, 65, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,32L26.7,29.3C53.3,27,107,21,160,18.7C213.3,16,267,16,320,24C373.3,32,427,48,480,66.7C533.3,85,587,107,640,114.7C693.3,123,747,117,800,109.3C853.3,101,907,91,960,77.3C1013.3,64,1067,48,1120,40C1173.3,32,1227,32,1280,40C1333.3,48,1387,64,1440,82.7C1493.3,101,1547,123,1600,120C1653.3,117,1707,91,1760,90.7C1813.3,91,1867,117,1920,128C1973.3,139,2027,133,2080,109.3C2133.3,85,2187,43,2240,29.3C2293.3,16,2347,32,2400,48C2453.3,64,2507,80,2560,72C2613.3,64,2667,32,2720,29.3C2773.3,27,2827,53,2880,61.3C2933.3,69,2987,59,3040,45.3C3093.3,32,3147,16,3200,13.3C3253.3,11,3307,21,3360,42.7C3413.3,64,3467,96,3520,93.3C3573.3,91,3627,53,3680,32C3733.3,11,3787,5,3813,2.7L3840,0L3840,160L3813.3,160C3786.7,160,3733,160,3680,160C3626.7,160,3573,160,3520,160C3466.7,160,3413,160,3360,160C3306.7,160,3253,160,3200,160C3146.7,160,3093,160,3040,160C2986.7,160,2933,160,2880,160C2826.7,160,2773,160,2720,160C2666.7,160,2613,160,2560,160C2506.7,160,2453,160,2400,160C2346.7,160,2293,160,2240,160C2186.7,160,2133,160,2080,160C2026.7,160,1973,160,1920,160C1866.7,160,1813,160,1760,160C1706.7,160,1653,160,1600,160C1546.7,160,1493,160,1440,160C1386.7,160,1333,160,1280,160C1226.7,160,1173,160,1120,160C1066.7,160,1013,160,960,160C906.7,160,853,160,800,160C746.7,160,693,160,640,160C586.7,160,533,160,480,160C426.7,160,373,160,320,160C266.7,160,213,160,160,160C106.7,160,53,160,27,160L0,160Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(219, 129, 65, 1)" offset="0%"></stop><stop stop-color="rgba(219, 129, 65, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,144L26.7,128C53.3,112,107,80,160,69.3C213.3,59,267,69,320,77.3C373.3,85,427,91,480,98.7C533.3,107,587,117,640,125.3C693.3,133,747,139,800,138.7C853.3,139,907,133,960,117.3C1013.3,101,1067,75,1120,58.7C1173.3,43,1227,37,1280,50.7C1333.3,64,1387,96,1440,114.7C1493.3,133,1547,139,1600,141.3C1653.3,144,1707,144,1760,144C1813.3,144,1867,144,1920,122.7C1973.3,101,2027,59,2080,34.7C2133.3,11,2187,5,2240,2.7C2293.3,0,2347,0,2400,13.3C2453.3,27,2507,53,2560,77.3C2613.3,101,2667,123,2720,125.3C2773.3,128,2827,112,2880,109.3C2933.3,107,2987,117,3040,106.7C3093.3,96,3147,64,3200,45.3C3253.3,27,3307,21,3360,37.3C3413.3,53,3467,91,3520,106.7C3573.3,123,3627,117,3680,101.3C3733.3,85,3787,59,3813,45.3L3840,32L3840,160L3813.3,160C3786.7,160,3733,160,3680,160C3626.7,160,3573,160,3520,160C3466.7,160,3413,160,3360,160C3306.7,160,3253,160,3200,160C3146.7,160,3093,160,3040,160C2986.7,160,2933,160,2880,160C2826.7,160,2773,160,2720,160C2666.7,160,2613,160,2560,160C2506.7,160,2453,160,2400,160C2346.7,160,2293,160,2240,160C2186.7,160,2133,160,2080,160C2026.7,160,1973,160,1920,160C1866.7,160,1813,160,1760,160C1706.7,160,1653,160,1600,160C1546.7,160,1493,160,1440,160C1386.7,160,1333,160,1280,160C1226.7,160,1173,160,1120,160C1066.7,160,1013,160,960,160C906.7,160,853,160,800,160C746.7,160,693,160,640,160C586.7,160,533,160,480,160C426.7,160,373,160,320,160C266.7,160,213,160,160,160C106.7,160,53,160,27,160L0,160Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(219, 129, 65, 1)" offset="0%"></stop><stop stop-color="rgba(219, 129, 65, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,16L26.7,37.3C53.3,59,107,101,160,106.7C213.3,112,267,80,320,58.7C373.3,37,427,27,480,32C533.3,37,587,59,640,58.7C693.3,59,747,37,800,24C853.3,11,907,5,960,10.7C1013.3,16,1067,32,1120,53.3C1173.3,75,1227,101,1280,114.7C1333.3,128,1387,128,1440,114.7C1493.3,101,1547,75,1600,53.3C1653.3,32,1707,16,1760,24C1813.3,32,1867,64,1920,74.7C1973.3,85,2027,75,2080,58.7C2133.3,43,2187,21,2240,21.3C2293.3,21,2347,43,2400,42.7C2453.3,43,2507,21,2560,24C2613.3,27,2667,53,2720,64C2773.3,75,2827,69,2880,56C2933.3,43,2987,21,3040,18.7C3093.3,16,3147,32,3200,53.3C3253.3,75,3307,101,3360,101.3C3413.3,101,3467,75,3520,56C3573.3,37,3627,27,3680,26.7C3733.3,27,3787,37,3813,42.7L3840,48L3840,160L3813.3,160C3786.7,160,3733,160,3680,160C3626.7,160,3573,160,3520,160C3466.7,160,3413,160,3360,160C3306.7,160,3253,160,3200,160C3146.7,160,3093,160,3040,160C2986.7,160,2933,160,2880,160C2826.7,160,2773,160,2720,160C2666.7,160,2613,160,2560,160C2506.7,160,2453,160,2400,160C2346.7,160,2293,160,2240,160C2186.7,160,2133,160,2080,160C2026.7,160,1973,160,1920,160C1866.7,160,1813,160,1760,160C1706.7,160,1653,160,1600,160C1546.7,160,1493,160,1440,160C1386.7,160,1333,160,1280,160C1226.7,160,1173,160,1120,160C1066.7,160,1013,160,960,160C906.7,160,853,160,800,160C746.7,160,693,160,640,160C586.7,160,533,160,480,160C426.7,160,373,160,320,160C266.7,160,213,160,160,160C106.7,160,53,160,27,160L0,160Z"></path></svg>
       </div>
-  </div>
-</div>
-
-    <!--Seccion de la ONDA debajo-->
-    <div class="onda2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#db8141" fill-opacity="1" d="M0,128L1440,32L1440,320L0,320Z"></path></svg>
+  
+      <!--Seccion de las Reseñas-->
+  
+      <section class="reseñas">
+          <a class="reseñas__Titulo" href=".//vistas/valoraciones.html"><h2 class="reseñas__Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="./assets/SALTBAE.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT LO DE PABLO</h5></a>
+                  <p class="card-text">El chef Gaston Torres fue invitado al restaurant del famoso cocinero Pablo Torrens y degustó un menú de 6 pasos. Entra para ver la descripcion del mismo y su valoracion.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 days ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card h-100">
+                <a href=""><img src="./assets/gordon-ramsay-main-quien.jpg" class="card-img-top" alt="...">
+                <div class="card-body"></a>
+                  <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT CACHITO</h5></a>
+                  <p class="card-text">Gordon se llegó al Restaurant de Cachito en el barrio Belgrano para probar la parrillada que tanta fama le dió durante la cuarentena. Te adelantamos que la devolucion es mas que positiva, pero entra a la nota para ver los detalles de del lugar y una sorpresa sobre un postre mas que especial.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 7 weeks ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href=".//vistas/recetas.html"><img src="./assets/martitegui.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a class="reseñas__Anchore" href=".//vistas/recetas.html"><h5 class="card-title">LA CASA DE TOTO</h5></a>
+                  <p class="card-text">Siempre se ha dicho que en la casa de Toto se come muy bien y mandamos al chef Guido para comprobarlo. Si bien cumple con las expectativas, el chef se encargo de dejar en claro las cosas que le molestaron, no creo que la reseña sea tan positiva...</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+  
+      <!--Seccion de la comida recomendada del mes-->
+  
+    <div class="card bg-dark text-white recomendada">
+      <img src="./assets/locrito.jpg" class="card-img recomendada__Imagen" alt="...">
+      <div class="card-img-overlay recomendada__Textos">
+        <h5 class="card-title">PLATO RECOMENDADO DEL MES</h5>
+        <a class="recomendada__Anchore" href=".//vistas/recetas.html"><h1>LOCRO ARGENTINO</h1></a>
+        <p class="card-text">SE VIENE EL INVIERNO! Y que delicia disfrutar este plato caliente en un mediodía frio. Puede parecer complicado, pero te enseñamos paso a paso como hacer este plato tradicional para que no puedas poner excusas. Prepara los ingredientes y MANOS A LA OBRA!! </p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
     </div>
+  
+  </main>
 
-    <!--Seccion de las Reseñas-->
-
-    <section class="reseñas">
-        <a class="reseñas__Titulo" href=".//vistas/valoraciones.html"><h2 class="reseñas__Titulo">RESEÑAS DE NUESTROS ESPECIALISTAS</h2> </a>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <a href=".//vistas/recetas.html"><img src="./assets/SALTBAE.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT LO DE PABLO</h5></a>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis animi earum nam, omnis molestiae sapiente perspiciatis nostrum iusto mollitia vitae, numquam minus officiis totam hic voluptatem iure repellat expedita?</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 days ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col ">
-            <div class="card h-100">
-              <a href=""><img src="./assets/gordon-ramsay-main-quien.jpg" class="card-img-top" alt="...">
-              <div class="card-body"></a>
-                <a class="reseñas__Anchore" href="./vistas/recetas.html"><h5 class="card-title">RESTAURANT CACHITO</h5></a>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dignissimos vel eveniet ea velit reiciendis debitis consectetur, animi distinctio dolores!.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 7 weeks ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href=".//vistas/recetas.html"><img src="./assets/martitegui.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <a class="reseñas__Anchore" href=".//vistas/recetas.html"><h5 class="card-title">LA CASA DE TOTO</h5></a>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime tempora nam harum dolore nulla itaque ipsum nesciunt magnam quis? Mollitia tempore cupiditate voluptatem! Eos, necessitatibus.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-  <!--Seccion de la comida recomendada del mes-->
-
-  <div class="card bg-dark text-white recomendada">
-    <img src="./assets/locrito.jpg" class="card-img recomendada__Imagen" alt="...">
-    <div class="card-img-overlay recomendada__Textos">
-      <h5 class="card-title">PLATO RECOMENDADO DEL MES</h5>
-      <a class="recomendada__Anchore" href=".//vistas/recetas.html"><h1>LOCRO ARGENTINO</h1></a>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ad a velit enim officiis autem? Culpa inventore, cum, quidem mollitia hic voluptates ullam neque ipsum deserunt tempora quasi assumenda praesentium?Lorem ipsum dolor sit amet consectetur.</p>
-      <p class="card-text">Last updated 3 mins ago</p>
-    </div>
-  </div>
 
     <!--Footer con datos-->
 
-    <nav class="navbar footer">
+    <footer class="navbar footer">
       <div class="container-fluid justify-content-center">
         <span class="navbar-text footer__Span">
           <ul class="footer__Ul">
@@ -229,8 +230,12 @@
           </ul>
         </span>
       </div>
-    </nav>
+    </footer>
 
     <script src="./js/bootstrap.bundle.min.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

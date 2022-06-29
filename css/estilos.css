@@ -10,19 +10,12 @@
 
 .index__Body {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "nav nav"
-                         "hero hero"
-                         "texto publi"
-                         "onda publi"
-                         "recetas lateral"
-                         "fotos lateral"
-                         "onda2 onda2"
-                         "reseña reseña"
-                         "recomendada recomendada"
-                         "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer"
 }
+
 
 /*Barra de Navegacion*/
 
@@ -50,6 +43,22 @@
     margin-left:1.5rem;
 }
 
+/*Estructura del main*/
+.index__Main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "hero hero"
+                         "onda publi"
+                         "recetas lista"
+                         "fotos lista"
+                         "onda2 onda2"
+                         "reseña reseña"
+                         "recomendada recomendada";
+}
+
+
+
 /*Hero section */
 
 .hero {
@@ -57,24 +66,14 @@
     position: relative;
     height: 85vh;
     width: 100%;
-}
-.hero__Div {
-    width: 100%;
-    height: 100%;
-}
-
-.hero__Div--imagen {
-    height: 100%;
-    width: 100%;
+    background-image: url(../assets/fondedelhero.jpg);   
 }
 
 .hero__Titulo {
     color: rgb(255, 255, 255);
     font-family: Lobster;
     font-size: 40px;
-    padding-left: 40px;
     position: absolute;
-    bottom: 200px;
 }
 
 
@@ -110,13 +109,12 @@
 /*Seccion Lateral*/
 
 .lateral {
-    grid-area: lateral;
+    grid-area: lista;
     margin-top: -5px;
-    height: 105%;
     width: 100%;
     display: flex;
     flex-direction: column;
-}
+}  
 
 .lateral__Titulo {
     color: rgb(0, 0, 0);
@@ -260,7 +258,6 @@
 
 .onda2{
     grid-area: onda2;
-    height: 150px;
 }
 
 .div__Onda2--Svg {
@@ -372,20 +369,17 @@
 
 @media screen and (max-width: 480px) {
 
-    .body {
+    .index__Main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "nav"
-                             "hero"
-                             "texto"
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "hero"
                              "onda"
                              "recetas"
                              "fotos"
                              "onda2"
                              "reseña"
-                             "recomendada"
-                             "footer";
+                             "recomendada";
     }
 
     .nav__Div--Imagen {
@@ -399,11 +393,11 @@
         display: none;
     }
 
-    .section__Publicidad {
+    .publicidad {
         display: none;
     }
 
-    .section__Recetas--Div {
+    .div__Recetas {
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -700,7 +694,6 @@
 
 /*MEDIA QUERIE (bajo)*/
 /*@media screen and (max-width: 650px)*/
-/*
     .contacto__body { 
         display: grid;
         grid-template-columns:auto;
@@ -738,7 +731,7 @@
         color: beige;
         height: 100%;
         padding-top: 10px;
-    }*/
+    }
 
 
 /* PAGINA DE LAS VALORACIONES */
@@ -866,3 +859,42 @@
     }
 }
 
+/* PAGINA DE LOS CURSOS */
+
+/*CUERPO GENERAL DE LOS CURSOS*/
+
+.cursos__Body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav"
+                         "hero hero"
+                         "onda onda"
+                         "recetas publi"
+                         "fotos lateral"
+                         "onda2 onda2"
+                         "recetas2 recetas2"
+                         "recomendada recomendada"
+                         "footer footer";
+}
+
+/*MAIN DE LOS CURSOS*/
+
+.Main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "hero hero"
+                         "consejo consejo"
+                         "onda1 onda1"
+                         "cursos publi"
+                         "cursos lateral"
+                         "recomendada recomendada";
+}
+
+/*HERO SECTION DE LOS CURSOS*/
+
+.cursos__Hero {
+    background-image: url(../assets/clasedecocina.jpg);
+    background-position: center;
+}

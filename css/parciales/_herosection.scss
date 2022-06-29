@@ -1,23 +1,24 @@
 .hero {
     grid-area: hero;
     position: relative;
-    height: 85vh;
+    background-image: url(../assets/fondedelhero.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 90vh;
     width: 100%;
-    .hero__Div {
-        width: 100%;
-        height: 100%;
-        .hero__Div--imagen {
-            height: 100%;
-            width: 100%;
-        }
     }
+
     .hero__Titulo {
+        width: 80%;
         color: rgb(255, 255, 255);
-        font-family: Lobster;
-        font-size: 40px;
-        padding-left: 40px;
-        position: absolute;
-        bottom: 200px;
+        font-family: Playfair Dispair;
+        font-size: 2rem;
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
+
 

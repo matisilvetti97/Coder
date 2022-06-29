@@ -1,0 +1,14 @@
+/*Estructura del main*/
+.index__Main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "hero hero"
+                         "onda onda"
+                         "recetas publi"
+                         "fotos lateral"
+                         "onda2 onda2"
+                         "reseña reseña"
+                         "recomendada recomendada";
+}
+

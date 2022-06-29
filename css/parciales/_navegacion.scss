@@ -4,6 +4,9 @@
     align-items: center;
     flex-wrap: nowrap;
     background-color: #000000;
+    z-index: 99;
+    position: sticky;
+    top: 0px;
     .nav__Imagen {
         width: 10%;
         filter: invert(100%);
