@@ -1,7 +1,12 @@
-.nav {
-    grid-area: nav;
+@mixin centrado {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    grid-area: nav;
+    @include centrado;
     flex-wrap: nowrap;
     background-color: #000000;
     z-index: 99;

@@ -22,6 +22,7 @@
                          "recetas2 recetas2";
 }
 
+
 /*CAROUSEL CON IMAGENES DE RECETAS INICIAL */
 
 .precetas__Carousel {
@@ -78,6 +79,25 @@
 
 
 /*BARRA LATERAL DE LA PAGINA DE RECETAS*/
+
+.plateral {
+    @extend .lateral;
+    background-color: rgb(204, 111, 4);
+    .plateral__Titulo {
+        @extend .lateral__Titulo;
+        color: black;
+    }
+    
+    .plateral__Lista {
+        @extend .lateral__Lista;
+        color: rgb(10, 3, 1);
+        .plateral__Lista--item {
+            @extend .lateral__Lista--Item
+        }
+    }
+}
+
+
 
 /*Receta Destacada*/
 

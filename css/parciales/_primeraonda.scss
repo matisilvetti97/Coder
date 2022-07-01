@@ -1,26 +1,29 @@
 /*Svg de Onda*/
+@mixin centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .onda1 {
     background: rgb(255, 255, 255);
     grid-area: onda;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .onda1__Titulo {
-        font-family: Koulen;
+    @include centrado;
+}
+
+.onda1__Titulo {
+    font-family: Koulen;
         font-size: 3rem;
         color:#000000;
         padding: 2rem;
-    }
-    
-    .onda1__Titulo:hover {
-        font-size: 4rem;
-    }
-    
-    .onda1__Parrafo {
-        font-family: Lobster;
-        font-size: 2rem;
-        padding: 0px 50px 0px 50px;
-    }
+}
+
+.onda1__Titulo:hover {
+    font-size: 4rem;
+}
+
+.onda1__Parrafo {
+    font-family: Lobster;
+    font-size: 2rem;
+    padding: 0px 50px 0px 50px;
 }

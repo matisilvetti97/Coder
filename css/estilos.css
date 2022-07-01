@@ -80,20 +80,16 @@
 /*Svg de Onda*/
 
 .onda1 {
-    background: rgb(222,54,54);
-    background: linear-gradient(180deg, rgba(222,54,54,1) 18%, rgba(219,129,65,1) 66%, rgba(219,177,148,1) 97%);
+    background: rgb(255, 255, 255);
+    @include: centrado;
     grid-area: onda;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .onda1__Titulo {
     font-family: Koulen;
-    font-size: 3rem;
-    margin: 70px 50px 10px 50px;
-    color:#000000;
+        font-size: 3rem;
+        color:#000000;
+        padding: 2rem;
 }
 
 .onda1__Titulo:hover {

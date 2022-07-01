@@ -1,3 +1,10 @@
+$textobase:(
+    tamaño: 1rem,
+    color: black,
+    letra: Lobster,
+);
+
+
 .reseñas {
     grid-area: reseña;
     display: flex;
@@ -15,6 +22,13 @@
             font-size: 4rem;
         }
     }
+
+    .reseñas__Div--Parrafo {
+        font-size: map-get($map: $textobase, $key: tamaño);
+        color: map-get($map: $textobase, $key: color);
+        font-family: map-get($map: $textobase, $key:letra )
+    }
+    
     .reseñas__Anchore {
         padding-top: 2rem;
         text-decoration: none;

@@ -1,3 +1,10 @@
+$textobase:(
+    tamaño: 1rem,
+    color: black,
+    letra: Lobster,
+);
+
+
 .carrousel {
     grid-area: fotos;
     .carrousel__Div{
@@ -15,7 +22,8 @@
             padding: 10px 5px 5px 5px;
         }
         .carrousel__Parrafo {
-            font-family: Loan;
+            font-size: map-get($map: $textobase, $key: tamaño);
+            font-family: map-get($map: $textobase, $key: letra );
         }
     }
     

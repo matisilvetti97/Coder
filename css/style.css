@@ -14,6 +14,7 @@
   grid-area: nav;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   background-color: #000000;
   z-index: 99;
@@ -53,52 +54,54 @@
   font-family: Playfair Dispair;
   font-size: 2rem;
   margin: 5rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*Svg de Onda*/
 .onda1 {
   background: white;
   grid-area: onda;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .onda1 .onda1__Titulo {
-    font-family: Koulen;
-    font-size: 3rem;
-    color: #000000;
-    padding: 2rem; }
-  .onda1 .onda1__Titulo:hover {
-    font-size: 4rem; }
-  .onda1 .onda1__Parrafo {
-    font-family: Lobster;
-    font-size: 2rem;
-    padding: 0px 50px 0px 50px; }
+  align-items: center;
+  justify-content: center; }
+
+.onda1__Titulo {
+  font-family: Koulen;
+  font-size: 3rem;
+  color: #000000;
+  padding: 2rem; }
+
+.onda1__Titulo:hover {
+  font-size: 4rem; }
+
+.onda1__Parrafo {
+  font-family: Lobster;
+  font-size: 2rem;
+  padding: 0px 50px 0px 50px; }
 
 /*Seccion Lateral*/
-.lateral {
+.lateral, .plateral {
   grid-area: lateral;
   margin-top: -5px;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.808); }
-  .lateral .lateral__Titulo {
+  .lateral .lateral__Titulo, .plateral .lateral__Titulo, .plateral .plateral__Titulo {
     color: #fdfdfd;
     font-family: koulen;
     font-size: 3rem;
     margin: 2rem; }
-  .lateral .lateral__Lista {
+  .lateral .lateral__Lista, .plateral .lateral__Lista, .plateral .plateral__Lista {
     font-family: koulen;
     color: white;
     font-size: 25px;
     list-style-type: none;
     padding-left: 20px;
     justify-content: space-between; }
-    .lateral .lateral__Lista .lateral__Lista--Item {
+    .lateral .lateral__Lista .lateral__Lista--Item, .plateral .lateral__Lista .lateral__Lista--Item, .plateral .plateral__Lista .lateral__Lista--Item, .plateral .plateral__Lista .plateral__Lista--item {
       padding-top: 40px; }
 
 .publicidad {
@@ -133,7 +136,7 @@
   .section__Recetas .seccion__Recetas--Parrafo {
     font-family: Lobster;
     font-size: 1.5rem;
-    color: #000000;
+    color: black;
     padding-left: 50px; }
   .section__Recetas .div__Recetas {
     display: flex;
@@ -160,9 +163,10 @@
       .section__Recetas .div__Recetas .article__Recetas .article__Recetas--Texto {
         display: flex;
         padding: 30px;
-        font-family: Playfair Display;
+        font-family: Lobster;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        color: black; }
 
 .carrousel {
   grid-area: fotos; }
@@ -179,7 +183,8 @@
       color: red;
       padding: 10px 5px 5px 5px; }
     .carrousel .carrousel__Div .carrousel__Parrafo {
-      font-family: Loan; }
+      font-size: 1rem;
+      font-family: Lobster; }
 
 /*Seccion de la segunda onda */
 .onda2 {
@@ -202,6 +207,10 @@
     color: black; }
     .reseñas .reseñas__Titulo .reseñas__Titulo :hover {
       font-size: 4rem; }
+  .reseñas .reseñas__Div--Parrafo {
+    font-size: 1rem;
+    color: black;
+    font-family: Lobster; }
   .reseñas .reseñas__Anchore {
     padding-top: 2rem;
     text-decoration: none;
@@ -230,48 +239,6 @@
       text-decoration: none; }
     .recomendada .recomendada__Textos .recomendada__Anchore :hover {
       font-size: 4rem; }
-
-.publicidad__Div--Publi1 {
-  background-image: url(../assets/Publi1.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
-
-.publicidad__Div--Publi2 {
-  background-image: url(../assets/Publi2.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
-
-.publicidad__Div--Publi3 {
-  background-image: url(../assets/Publi3.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
-
-.publicidad__Div--Publi4 {
-  background-image: url(../assets/Publi4.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
-
-.publicidad__Div--Publi5 {
-  background-image: url(../assets/Publi5.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
-
-.publicidad__Div--Publi6 {
-  background-image: url(../assets/Publi6.jpg);
-  height: 10rem;
-  background-position: center;
-  background-size: cover;
-  margin: 2rem; }
 
 .footer {
   grid-area: footer;
@@ -309,7 +276,7 @@
     filter: invert(100%);
     margin-left: 1.0rem;
     margin-right: 1.5rem; }
-  .lateral {
+  .lateral, .plateral {
     display: none; }
   .publicidad {
     display: none; }
@@ -380,6 +347,13 @@
     font-family: lobster; }
 
 /*BARRA LATERAL DE LA PAGINA DE RECETAS*/
+.plateral {
+  background-color: #cc6f04; }
+  .plateral .plateral__Titulo {
+    color: black; }
+  .plateral .plateral__Lista {
+    color: #0a0301; }
+
 /*Receta Destacada*/
 .div__Recetadestacada {
   grid-area: fotos;
@@ -665,3 +639,57 @@
     color: beige;
     height: 100%;
     padding-top: 10px; } }
+
+.titulo1 {
+  color: #37e031; }
+
+.titulo2 {
+  color: #fafd26; }
+
+.titulo3 {
+  color: #261BC8; }
+
+.titulo4 {
+  color: #CF4CA7; }
+
+.publicidad__Div--Publi1 {
+  background-image: url(../assets/Publi1.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi2 {
+  background-image: url(../assets/Publi2.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi3 {
+  background-image: url(../assets/Publi3.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi4 {
+  background-image: url(../assets/Publi4.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi5 {
+  background-image: url(../assets/Publi5.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }
+
+.publicidad__Div--Publi6 {
+  background-image: url(../assets/Publi6.jpg);
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem; }

@@ -1,9 +1,0 @@
-@each $publicidad in Publi1, Publi2, Publi3, Publi4, Publi5, Publi6 {
-    .publicidad__Div--#{$publicidad} {
-    background-image: url(../assets/#{$publicidad}.jpg);
-    height: 10rem;
-    background-position: center;
-    background-size: cover;
-    margin: 2rem;
-    }
-}
