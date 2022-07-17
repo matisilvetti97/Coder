@@ -27,17 +27,16 @@
 .cursos__Hero {
     grid-area: hero;
     display: flex;
-    width: 100%;
     flex-direction: row;
     background-color: rgb(154, 154, 156);
-    justify-content: space-around;
 }
 
-.cursos__Hero--Imagen {
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-}   
+.cursos__Hero--Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
 
 .cursos__Hero--Textos {
     display: flex;
@@ -96,4 +95,22 @@
     font-family: Koulen;
     font-size: 2rem;
     color: tomato;
+}
+
+.cursos__Descripcion--Anchore {
+    text-decoration: none;
+}
+
+/*MEDIA QUERIE SOLO PARA DISPOSITIVOS PEQUEÑOS. EL RESTO RESPONSIVE CON BOOOTSTRAP*/
+
+@media screen and (max-width: 480px) {
+    .cursos__Descripcion{
+        grid-area: cursos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cursos__Hero--Img {
+        display: none;
+    }
 }
