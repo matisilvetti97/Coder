@@ -271,6 +271,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: "hero" "onda" "recetas" "fotos" "onda2" "reseña" "recomendada"; }
+  .onda1 {
+    background: white;
+    grid-area: onda;
+    display: flex;
+    flex-direction: column; }
   .nav__Div--Imagen {
     width: 100%;
     filter: invert(100%);
@@ -544,14 +549,68 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: "hero hero" "onda onda" "consejo consejo" "cursos publi" "cursos2 lateral" "oferta oferta"; }
+  grid-template-areas: "hero hero" "onda onda" "consejo consejo" "cursos publi" "cursos lateral" "oferta oferta"; }
 
 .cursos__Hero {
   grid-area: hero;
-  height: 80vh;
-  background-image: url(../assets/clasedecocina.jpg);
-  background-position: cover;
-  background-repeat: no-repeat; }
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: #9a9a9c;
+  justify-content: space-around; }
+
+.cursos__Hero--Imagen {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%; }
+
+.cursos__Hero--Textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem; }
+
+.cursos__Hero--Titulo {
+  font-family: Playfair Display;
+  font-size: 5rem; }
+
+.cursos__Hero--Parrafo {
+  font-family: Playfair Display;
+  font-size: 2rem; }
+
+.cursos__Onda {
+  grid-area: onda; }
+
+.cursos__Consejo {
+  grid-area: consejo; }
+
+.cursos__Consejo--Titulo {
+  color: black;
+  font-family: Koulen;
+  font-size: 4rem;
+  text-align: center; }
+
+.cursos__Descripcion {
+  grid-area: cursos;
+  display: flex;
+  flex-direction: row; }
+
+.cursos__Descripcion--Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+
+.cursos__Descripcion--Imagenes {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%; }
+
+.cursos__Descripcion--Titulo {
+  font-family: Koulen;
+  font-size: 2rem;
+  color: tomato; }
 
 /*PAGINA DE CONTACTO*/
 /*CUERPO DEL CONTACTO*/

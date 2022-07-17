@@ -15,6 +15,13 @@
                              "recomendada";
     }
 
+    .onda1 {
+        background: rgb(255, 255, 255);
+        grid-area: onda;
+        display: flex;
+        flex-direction: column;
+    }
+
     .nav__Div--Imagen {
         width: 100%;
         filter: invert(100%);
